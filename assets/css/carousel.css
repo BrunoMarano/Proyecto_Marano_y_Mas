@@ -1,3 +1,7 @@
-.carousel_slide{
-    height: min-content;
+.carousel{
+    width: 90%; /* o 100%, o un valor fijo como 1200px */
+    aspect-ratio: 16 / 5; /* Más ancho que alto */
+    margin: auto;
+    overflow: hidden
+    
 }
