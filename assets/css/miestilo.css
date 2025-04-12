@@ -148,12 +148,11 @@
 }
  */
 
- .body{
-  background-image: url("assets/img/principal/logoAvicola/fondo.png");
+ .body-imagen{
+  background-image: url("../img/principal/logoAvicola/fondo.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
  }
 
   .navbar {
@@ -245,7 +244,7 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1390px) {
     .menu-toggle {
       display: block;
     }
