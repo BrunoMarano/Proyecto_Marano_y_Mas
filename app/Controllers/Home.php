@@ -6,41 +6,41 @@ class Home extends BaseController
 {
     public function index()
     {
-        $data['titulo']='principal';
+        $data['titulo']='Principal';
        return view('front/head_view',$data)
-        .view('front/nav_view')
+        .view('front/plantilla/nav_view')
         .view('front/principal')
         .view('front/footer_view');
     }   
 
     public function nosotros(){
 
-        $data['titulo']='nosotros';
-        return view('front/head_view',$data) .view('front/nav_view') .view('front/nosotros') .view('front/footer_view');
+        $data['titulo']='Nosotros';
+        return view('front/head_view',$data) .view('front/plantilla/nav_view') .view('front/nosotros') .view('front/footer_view');
     }
 
     public function productos(){
 
-        $data['titulo']='nosotros';
-        return view('front/head_view',$data) .view('front/nav_view') .view('front/nosotros') .view('front/footer_view');
+        $data['titulo']='Productos';
+        return view('front/head_view',$data) .view('front/plantilla/nav_view') .view('front/nosotros') .view('front/footer_view');
     }
 
     public function promociones(){
 
-        $data['titulo']='nosotros';
-        return view('front/head_view',$data) .view('front/nav_view') .view('front/nosotros') .view('front/footer_view');
+        $data['titulo']='Promociones';
+        return view('front/head_view',$data) .view('front/plantilla/nav_view') .view('front/nosotros') .view('front/footer_view');
     }
 
     public function metodosPagos(){
 
-        $data['titulo']='nosotros';
-        return view('front/head_view',$data) .view('front/nav_view') .view('front/nosotros') .view('front/footer_view');
+        $data['titulo']='Metodos de Pagos';
+        return view('front/head_view',$data) .view('front/plantilla/nav_view') .view('front/nosotros') .view('front/footer_view');
     }
 
     public function sucursales(){
 
-        $data['titulo']='nosotros';
-        return view('front/head_view',$data) .view('front/nav_view') .view('front/nosotros') .view('front/footer_view');
+        $data['titulo']='Sucursales';
+        return view('front/head_view',$data) .view('front/plantilla/nav_view') .view('front/nosotros') .view('front/footer_view');
     }
 }
 
