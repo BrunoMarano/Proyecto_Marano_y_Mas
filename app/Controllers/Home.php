@@ -7,7 +7,7 @@ class Home extends BaseController
     public function index()
     {
         $data['titulo']='Principal';
-       return view('front/head_view',$data) .view('front/plantilla/nav_view') .view('front/plantilla/carousel') .view('front/principal') .view('front/footer_view');
+       return view('front/head_view',$data) .view('front/plantilla/nav_view') .view('front/plantilla/carousel') .view('front/plantilla/card_principal') .view('front/principal') .view('front/footer_view');
     }   
 
     public function nosotros(){

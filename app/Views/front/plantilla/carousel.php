@@ -21,3 +21,7 @@
   </button>
 </div>
 </div>
+
+<div class= "barraGris">
+ <!-- Esto es una barra gris  -->
+ </div> 

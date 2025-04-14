@@ -147,151 +147,161 @@
   color: #333533;
 }
  */
-
- .body-imagen{
+ .body-imagen {
   background-image: url("../img/principal/logoAvicola/fondo.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
- }
+}
 
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffd100;
-    padding: 10px 20px;
+/* NAVBAR GENERAL */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffd100;
+  padding: 10px 20px;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+/* BOTÓN HAMBURGUESA */
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* MENU PRINCIPAL */
+.menu-p {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.menu-p li {
+  margin: 0;
+}
+
+/* LOGO */
+.nav_logo {
+  height: 90px;
+  width: auto;
+  max-width: 150px;
+}
+
+/* ENLACES */
+.nav-opciones,
+.nav-opciones-mp,
+.nav-opciones-sucursal {
+  color: #202020;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  white-space: nowrap;
+}
+
+/* BARRITA */
+.nav-barrita {
+  background-color: #000;
+  height: 30px;
+  width: 5px;
+  border-radius: 5px;
+}
+
+/* BÚSQUEDA */
+.busqueda {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.busqueda input {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  color: #000;
+  width: 150px;
+}
+
+.busqueda button {
+  background-color: transparent;
+  border: 1px solid #333;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.imagen_ig {
+  width: 20px;
+  height: auto;
+}
+
+/* HOVER OPCIONES */
+@media (hover: hover) {
+  .nav-opciones:hover,
+  .nav-opciones-mp:hover,
+  .nav-opciones-sucursal:hover {
+    background: #333533;
+    color: #d6d6d6;
     border-radius: 10px;
-    flex-wrap: wrap;
   }
+}
 
+/* VISTA MÓVIL */
+@media (max-width: 1200px) {
   .menu-toggle {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    background: none;
-    border: none;
+    display: block;
   }
 
-  .menu-p {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .menu-p li {
-    margin: 0 10px;
-  }
-
-  .nav_logo {
-    height: 90px;
-  }
-
-  .nav-opciones,
-  .nav-opciones-mp,
-  .nav-opciones-sucursal {
-    color: #202020;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px;
-  }
-
-  .nav-barrita {
-    background-color: #000;
-    height: 40px;
-    width: 5px;
-    border-radius: 5px;
-    margin: 0 10px;
-  }
-
+  .menu-p,
   .busqueda {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background-color: #ffd100;
+    padding: 10px 0;
+  }
+
+  .menu-p.show,
+  .busqueda.show {
     display: flex;
-    align-items: center;
-    gap: 10px;
-    list-style: none;
-    margin: 10px 0;
+  }
+
+  .menu-p li,
+  .busqueda li {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
   }
 
   .busqueda input {
-    background: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    color: #fff;
+    width: 80%;
   }
 
-  .busqueda button {
-    background-color: transparent;
-    border: 1px solid #333;
-    padding: 5px 10px;
-    cursor: pointer;
+  .nav-barrita {
+    height: 10px;
+    width: 100%;
+    margin: 10px 0;
   }
 
-  .imagen_ig {
-    width: 20px;
+  .nav_logo {
+    width: 80px;
     height: auto;
+    margin: 0 auto;
   }
-
-  @media (hover:hover) {
-    .nav-opciones:hover,
-    .nav-opciones-mp:hover,
-    .nav-opciones-sucursal:hover {
-      background: #333533;
-      color: #d6d6d6;
-      border-radius: 10px;
-    }
-  }
-
-  @media (max-width: 1390px) {
-    .menu-toggle {
-      display: block;
-    }
-
-    .nav_logo{
-      justify-items: center;
-      width: 30%;
-      height: 30%;
-    }
-
-    .menu-p,
-    .busqueda {
-      display: none;
-      width: 100%;
-      flex-direction: column;
-      background-color: #ffd100;
-      padding: 10px 0;
-    }
-
-    .menu-p.show,
-    .busqueda.show {
-      display: flex;
-    }
-
-    .menu-p li{
-      margin: 5px 0;
-      width: 100%;
-      text-align: left;
-    }
-    .busqueda li,
-    .busqueda form{
-      margin: 5px 0;
-      width: 100%;
-      text-align: center;
-    }
-
-    .nav-barrita {
-      background-color: #000;
-      height: 10px;
-      width: 100%;
-      border-radius: 5px;
-      margin: 0 10px;
-      align-items: center;
-    }
-
-    
 }
+
 
   .barraNegra{
     background-color: #000; /* Color negro*/ 
@@ -302,4 +312,9 @@
     align-items: center;
     justify-content: center;
     font-family: sans-serif;
+}
+
+.card{
+  width: 30%;
+  
 }
