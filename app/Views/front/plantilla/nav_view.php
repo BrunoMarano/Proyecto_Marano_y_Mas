@@ -59,7 +59,15 @@
   function toggleMenu() {
     document.querySelector('.menu-p').classList.toggle('show');
     document.querySelector('.busqueda').classList.toggle('show');
-  }
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('open');
+  })
+}
+document.addEventListener('click', (e) => {
+            if (!dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove('open');
+            }
+        });
 </script>
 
 <div class= "barraNegra">
