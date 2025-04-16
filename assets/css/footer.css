@@ -1,0 +1,42 @@
+.card-footer {
+    background-color: #f8f9fa; /* Color claro de fondo */
+    color: #6c757d;            /* Color de texto tipo secundario */
+    font-size: 0.9rem;         /* Tamaño de fuente ligeramente más pequeño */
+    font-style: italic;        /* Estilo cursiva */
+    padding: 0.75rem 1rem;     /* Espaciado interno */
+    border-top: 1px solid #dee2e6; /* Línea superior suave */
+    text-align: right;         /* Alineación del texto a la derecha */
+  }
+  
+
+  .footer-logo{
+    margin-right: 100%;
+    width: 10%;
+  }
+  
+.derechos-reservados{
+    text-align: center;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.6); /* Negro con 60% de opacidad */
+    color: white;                        /* Texto blanco para contraste */
+    padding: 5px;                       /* Espaciado interno */               
+}
+
+.titulo-map{
+    margin-bottom:min-content;
+}
+
+.map-container {
+    width: 40%;
+    height: 40%;
+    margin-left: 30%;
+    border: 4px solid #333;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
