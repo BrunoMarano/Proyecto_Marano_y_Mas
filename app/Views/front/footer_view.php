@@ -20,12 +20,29 @@
     <div class="logo-container">
       <img class="footer-logo" src="assets/img/principal/logoAvicola/logoAvicola.png" alt="logoAvicola">
     </div>
-    <div>
-      <ul>
+    <div class= "contacto-footer">
+      <ul class= "lista-contacto">
         <li class="contacto">
           <p>Contacto</p>
-          <p></p> 
         </li>
+        <li class="contacto-items">
+          <p >Tel: 379-4167832</p>
+        </li>
+        <li class= "contacto-items">
+          <p >Email: contacto@avicolasantaana.com</p>
+        </li>
+      </ul>
+      <ul class= "logo-redes-footer">
+        <li>
+          <img class= "imagenes-footer" src="assets/img/footer/logoX.png" alt="logoX.png">
+        </li>
+        <li>
+          <img class= "imagenes-footer" src="assets/img/footer/logoFACE.png" alt="logoFace.png">
+        </li>
+        <li>
+          <img class= "imagenes-footer" src="assets/img/footer/logoIG.png" alt="logoIG.png">
+        </li>
+      </ul>
     </div>
     <div class="map-section">
       <p class="titulo-map">Donde nos encontras</p>
@@ -45,3 +62,4 @@
 <div class="derechos-reservados">
     <p> ©2025 Todos los derechos reservados a Avicola Santa Ana - Desarrollado por Marano Bruno Joel y Fernando Mas ®</p>
 </div> 
+        </body>

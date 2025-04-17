@@ -70,7 +70,7 @@
   }
   
   .footer-logo {
-    width: 120px;
+    width: 200px;
     height: auto;
     object-fit: contain;
   }
@@ -109,4 +109,39 @@
   font-weight: bold;
   text-align: center;
   margin: 0;
+}
+
+.contacto{
+  color: #202020;
+  font-size:xx-large;
+}
+
+.contacto-footer{
+  margin-right: 15%;
+  width: 20%;
+
+}
+
+.lista-contacto{
+  list-style: none;
+}
+
+.contacto-items{
+  margin-left: 5%;
+}
+
+.logo-redes-footer{
+  display: flex;
+  display:inline-flex;
+  list-style: none;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.imagenes-footer{
+  width: 25%;
+}
+
+.logo-redes-footer li{
+  margin: -30px;
 }
