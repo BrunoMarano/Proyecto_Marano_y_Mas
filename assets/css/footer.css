@@ -75,10 +75,8 @@
     object-fit: contain;
   }
   
-  /* Mapa centrado en pantalla */
   .map-container {
-    align-items:center;
-    width: 40%;
+    width: 100%;
     height: 40%;
     border: 4px solid #333;
     border-radius: 12px;
@@ -99,6 +97,16 @@
      padding: 5px;                       /*Espaciado interno  */
 }
 
-.titulo-map{
+.map-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.titulo-map {
+  font-size: 18px;
+  font-weight: bold;
   text-align: center;
+  margin: 0;
 }
