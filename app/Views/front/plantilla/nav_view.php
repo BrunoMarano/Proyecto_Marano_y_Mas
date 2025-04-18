@@ -30,7 +30,7 @@
 
 
 <link rel="stylesheet" href="styles.css">
-
+<div>
 <nav class="navbar">
   <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
   <ul class="menu-p">
@@ -53,7 +53,11 @@
       </form>
     </li>
   </ul>
+  <div class= "barraNegra">
+ <!-- Esto es una barra negra  -->
+ </div> 
 </nav>
+</div>
 
 <script>
   function toggleMenu() {
@@ -70,6 +74,3 @@ document.addEventListener('click', (e) => {
         });
 </script>
 
-<div class= "barraNegra">
- <!-- Esto es una barra negra  -->
- </div> 

@@ -32,17 +32,6 @@
           <p >Email: contacto@avicolasantaana.com</p>
         </li>
       </ul>
-      <ul class= "logo-redes-footer">
-        <li>
-          <img class= "imagenes-footer" src="assets/img/footer/logoX.png" alt="logoX.png">
-        </li>
-        <li>
-          <img class= "imagenes-footer" src="assets/img/footer/logoFACE.png" alt="logoFace.png">
-        </li>
-        <li>
-          <img class= "imagenes-footer" src="assets/img/footer/logoIG.png" alt="logoIG.png">
-        </li>
-      </ul>
     </div>
     <div class="map-section">
       <p class="titulo-map">Donde nos encontras</p>
@@ -54,7 +43,22 @@
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
+     
     </div>
+    <div class="redes-footer">
+        <p class="redes-p">Nuestras redes</p>
+        <ul class= "logo-redes-footer">
+        <li>
+        <a href ="https://x.com/home"><img class= "imagenes-footer" src="assets/img/footer/logoX.png" alt="logoX.png">
+        </li>
+        <li>
+        <a href ="https://www.facebook.com/avicolasantaanasa/?locale=de_DE"><img class= "imagenes-footer" src="assets/img/footer/logoFACE.png" alt="logoFace.png"></a>
+        </li>
+        <li>
+        <a href ="https://www.instagram.com/avicolasantaana"><img class= "imagenes-footer" src="assets/img/footer/logoIG.png" alt="logoIG.png"></a>
+        </li>
+      </ul>
+        </div>
   </div>
 </div>
 

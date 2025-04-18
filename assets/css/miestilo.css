@@ -154,16 +154,19 @@
   background-repeat: no-repeat;
 }
 
+
 /* NAVBAR GENERAL */
 .navbar {
-  display: flex;
+  position: fixed;
+  width: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: #ffd100;
   padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   gap: 10px;
+  z-index: 1000;
 }
 
 /* BOTÓN HAMBURGUESA */
@@ -367,16 +370,18 @@
 }
 
 
-  .barraNegra{
-    background-color: #000; /* Color negro*/ 
-    height: 20px; /* Altura de la barra */ 
-    width: 100%; /* Que ocupe todo el ancho */ 
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: sans-serif;
+.barraNegra {
+  background-color: #000; 
+  height: 10px; 
+  width: 100%; 
+  border-radius: 10px;
+  font-family: sans-serif;
+  position: fixed;
+  top: 120px;
+  left: 0;
+  z-index: 1000;
 }
+
 
 .card-principal{
   width: 15%;
