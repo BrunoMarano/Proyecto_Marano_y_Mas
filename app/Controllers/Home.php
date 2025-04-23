@@ -18,7 +18,7 @@ class Home extends BaseController
     public function nosotros(){
 
         $data['titulo']='Nosotros';
-        return view('front/head_view',$data) 
+        return view('front/head_view',$data)
         .view('front/plantilla/nav_view') 
         .view('front/nosotros') 
         .view('front/footer_view');
