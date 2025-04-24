@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Acerca de Nosotros</title>
-    <link href="assets/css/estiloNosotros.css" rel="stylesheet" > 
-</head>
-<body>
-    <header>
-        <div class="acercaNosotros">
-            <h1>Acerca de Nosotros</h1>
-        </div>
-    </header>
+
+    <div class="acercaNosotros">
+        <h1>Acerca de Nosotros</h1>
+    </div>
     <div class="galeria">
         <div class="item" onclick="document.getElementById('huevos').scrollIntoView({ behavior: 'smooth' });">
             <img src="assets/img/Nosotros/huevoNos.jpg" alt="Huevos">
@@ -42,6 +33,3 @@
         </p>
         <img src="assets/img/Nosotros/carneNos2.jpg" alt="Carnes">
     </section>
-
-</body>
-</html>

@@ -37,8 +37,7 @@ class Home extends BaseController
 
         $data['titulo']='Promociones';
         return view('front/head_view',$data) 
-        .view('front/plantilla/nav_view') 
-        .view('front/nosotros') 
+        .view('front/plantilla/nav_view')
         .view('front/footer_view');
     }
 
@@ -46,8 +45,7 @@ class Home extends BaseController
 
         $data['titulo']='Metodos de Pagos';
         return view('front/head_view',$data) 
-        .view('front/plantilla/nav_view') 
-        .view('front/nosotros') 
+        .view('front/plantilla/nav_view')
         .view('front/footer_view');
     }
 
@@ -55,8 +53,7 @@ class Home extends BaseController
 
         $data['titulo']='Sucursales';
         return view('front/head_view',$data) 
-        .view('front/plantilla/nav_view') 
-        .view('front/nosotros') 
+        .view('front/plantilla/nav_view')
         .view('front/footer_view');
     }
 }

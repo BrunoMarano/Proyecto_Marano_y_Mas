@@ -10,6 +10,6 @@
     <link href="assets/css/carousel.css" rel="stylesheet">
     <link href="assets/css/footer.css" rel="stylesheet">
     <script src="assets/js/bootstrap.bundle.min.js" integrity="" crossorigin=""></script>
+    <link href="assets/css/estiloNosotros.css" rel="stylesheet" >
   </head>
   <body class= "body-imagen">
-</html>
