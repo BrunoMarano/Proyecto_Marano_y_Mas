@@ -58,5 +58,13 @@ class Home extends BaseController
         .view('front/Sucursales') 
         .view('front/footer_view');
     }
+
+    public function login(){
+        $data['titulo']='Login';
+        return view('front/head_view',$data)
+        .view('front/plantilla/nav_view')
+        .view('front/login')
+        .view('front/footer_view');
+    }
 }
 
