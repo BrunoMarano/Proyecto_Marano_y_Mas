@@ -32,12 +32,12 @@ class Home extends BaseController
         .view('front/footer_view');
     }
 
-    public function promociones(){
+    public function contacto(){
 
         $data['titulo']='Promociones';
         return view('front/head_view',$data) 
         .view('front/plantilla/nav_view')
-        .view('front/promociones') 
+        .view('front/contacto') 
         .view('front/footer_view');
     }
 

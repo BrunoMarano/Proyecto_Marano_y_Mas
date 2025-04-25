@@ -38,7 +38,7 @@
     <li><a class="nav-opciones" href="<?php echo base_url("/");?>">Inicio</a></li>
     <li><a class="nav-opciones" href="<?php echo base_url('Nosotros');?>">Nosotros</a></li>
     <li><a class="nav-opciones" href="<?php echo base_url('Productos');?>">Productos</a></li>
-    <li><a class="nav-opciones" href="<?php echo base_url('Promociones');?>">Promociones</a></li>
+    <li><a class="nav-opciones" href="<?php echo base_url('Contacto');?>">Contacto</a></li>
     <li><div class="nav-barrita"></div></li>
     <li><a class="nav-opciones-mp" href="<?php echo base_url('Metodos de Pagos');?>">Metodos de pagos</a></li>
     <li><a class="nav-opciones-sucursal" href="<?php echo base_url('Sucursales');?>">Sucursales</a></li>
