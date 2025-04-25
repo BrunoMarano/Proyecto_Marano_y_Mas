@@ -157,7 +157,7 @@
 
 /* NAVBAR GENERAL */
 .navbar {
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
