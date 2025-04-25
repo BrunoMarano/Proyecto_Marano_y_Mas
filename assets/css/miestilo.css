@@ -157,9 +157,9 @@
 
 /* NAVBAR GENERAL */
 .navbar {
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
   justify-content: space-between;
   align-items: center;
   background-color: #ffd100;
@@ -187,6 +187,13 @@
   margin: 0;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+.nav-login{
+  width: 30%;
+    border-radius: 10px;
+    background-color:#ffee32;
+    color: #333533;
 }
 
 .menu-p li {

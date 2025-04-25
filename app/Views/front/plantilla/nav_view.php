@@ -46,6 +46,7 @@
 
   <ul class="busqueda">
     <li class="ig"><a href="https://www.instagram.com/avicolasantaana"><img class="imagen_ig" src="assets/img/principal/redes/logoIG.png" alt="logo_ig"></a></li>
+    <li class="nav-login"><a href="<?php echo base_url('Login');?>">Iniciar Sesión</a></li>
     <li>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

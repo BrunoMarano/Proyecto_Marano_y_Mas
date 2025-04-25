@@ -11,3 +11,4 @@ $routes->get('Productos', 'Home::productos');
 $routes->get('Contacto', 'Home::contacto');
 $routes->get('Metodos de Pagos', 'Home::metodosPagos');
 $routes->get('Sucursales', 'Home::sucursales');
+$routes->get('Login', 'Home::login');

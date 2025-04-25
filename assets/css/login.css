@@ -1,0 +1,71 @@
+.saludo{
+    margin-top: 5%;
+    margin-bottom: 2%;
+
+}
+
+.login{
+    
+    width: 30%;
+    height: 300px;
+    margin-left: 35%;
+    background-color: #ffd100;
+    border-radius: 10px;
+}
+
+.mb-3{
+    width: 70%;
+    margin-left: 15%;
+}
+
+.mb-3 input{
+    border-color: black;
+}
+
+.formulario{
+    padding-top: 8%;
+}
+
+.login form{
+    text-align: center;
+}
+
+.login form button{
+    text-align: center;
+    border-radius: 5px;
+    border-color: black;
+    color: black;
+    background-color: #ffd100;
+    font-size:100%;
+    margin: auto;
+}
+
+.login form button:hover {
+    background-color: #333533;
+    color: white;
+    margin: auto;
+}
+
+.div-register{
+    text-align: center;
+    margin-bottom: 10%;
+    margin-top: 2%;
+}
+
+.div-register a{
+    
+}
+
+.btn-regis{
+    width: 30%;
+    border-radius: 10px;
+    background-color:#ffee32;
+    color: #333533;
+}
+
+
+.btn-regis:hover {
+    background-color: #333533;
+    color: white;
+    margin: auto;
+}
