@@ -52,10 +52,7 @@
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
     </li>
-  </ul>
-  <div class= "barraNegra">
- <!-- Esto es una barra negra  -->
- </div> 
+  </ul> 
 </nav>
 </div>
 
