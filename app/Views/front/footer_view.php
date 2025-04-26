@@ -14,7 +14,7 @@
 <div class="derechos-reservados">
     <p> ©2025 Todos los derechos reservados a Avicola Santa Ana - Desarrollado por Marano Bruno Joel y Fernando Mas ®</p>
 </div> -->
-
+<div class= "footer">
 <div class="card-footer">
   <div class="footer-wrapper">
     <div class="logo-container">
@@ -66,3 +66,4 @@
 <div class="derechos-reservados">
     <p> ©2025 Todos los derechos reservados a Avicola Santa Ana - Desarrollado por Marano Bruno Joel y Mas Fernando ®</p>
 </div> 
+        </div>

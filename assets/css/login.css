@@ -1,6 +1,7 @@
 .saludo{
     margin-top: 5%;
     margin-bottom: 2%;
+    text-align: center;
 
 }
 
@@ -53,7 +54,8 @@
 }
 
 .div-register a{
-    
+    text-decoration: none;
+    color: #333533;
 }
 
 .btn-regis{
@@ -63,10 +65,21 @@
     color: #333533;
 }
 
+.btn a{
+    text-decoration: none;
+    color: #333533;
+}
+
 
 .btn-regis:hover {
     background-color: #333533;
-    color: white;
     margin: auto;
 }
 
+.a-register:hover {
+    color: white;
+}
+
+.btn a:hover{
+    color: whitesmoke;
+}

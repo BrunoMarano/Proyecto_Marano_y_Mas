@@ -14,9 +14,9 @@
     <div id="emailHelp" class="form-text">Nunca compartas tu contraseña</div>
   </div>
 </div>
-  <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+  <button type="submit" class="btn btn-primary"><a href="">Iniciar Sesion</a></button>
 </form>
 </div>
 <div class="div-register">
-<button type="submit" class="btn-regis"><a href="<?php echo base_url('Register');?>">Registrarse</a></button>
+<button type="submit" class="btn-regis"><a class="a-register" href="<?php echo base_url('Register');?>">Registrarse</a></button>
 </div>
