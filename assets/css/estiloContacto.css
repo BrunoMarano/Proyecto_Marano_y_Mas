@@ -8,11 +8,33 @@
     margin-left: 30px;
 }
 
+.form-contacto{
+    margin-left: 30px;
+}
+
+
+.row-mb-3-contacto{
+    
+}
+
 .col-form-label{
     text-align: center;
 }
 
-.form-control-nosotros{
-    width: 100px;
+.form-control-contacto{
+    width: 300px;
+    height: 40px;
+}
+
+.form-control-contacto-motivo{
+    width: 600px;
+    height: 300px;
+}
+
+.btn-btn-primary-contacto{
+    background-color: #ffd100;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 10px;
 }
 
