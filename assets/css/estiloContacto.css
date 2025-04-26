@@ -1,20 +1,72 @@
+/* div's principales */
 .contactanos{
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
+.contacto-general{
+    display: flex;
+    justify-content: space-between; /* Espacio entre formulario y datos */
+    align-items: flex-start; /* Alinea arriba */
+    gap: 40px; /* Espacio entre las columnas */
+    padding: 20px;
+}
+
+.form-contacto{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    border-color: #ffd100;
+}
+
+.datos{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    border: #ffd100;
+}
+
+
+/* Modificaciones de div: contactanos */
+.contactanos h4{
+    font-size:xx-large;
+}
+
+
+
+/* Modificaciones de div: datos */
+.datos h6{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.datos p{
+    margin-left: 15px;
+    font-size: large;
+    line-height: 50px;
+}
+
+
+/* Modificaciones de div: Formulario */
 .form-contactanos{
     margin-left: 30px;
 }
 
 .form-contacto{
     margin-left: 30px;
+    margin-bottom: 50px;
 }
 
 
 .row-mb-3-contacto{
-    
+    margin-left: 10px;
+}
+
+.col-sm-2-col-form-label-contacto{
+    margin-left: 10px;
 }
 
 .col-form-label{
@@ -26,9 +78,11 @@
     height: 40px;
 }
 
-.form-control-contacto-motivo{
+.form-control-contacto-motivo {
     width: 600px;
-    height: 300px;
+    height: 300px; /* Altura inicial */
+    padding: 8px;
+    resize: vertical; /* Permite al usuario agrandar el textarea hacia abajo */
 }
 
 .btn-btn-primary-contacto{
@@ -36,5 +90,29 @@
     border-radius: 10px;
     margin-top: 30px;
     padding: 10px;
+    margin-left: 20px;
 }
+
+@media (max-width: 768px) {
+    .contacto-general {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .form-contacto, .datos {
+      width: 90%;
+      margin-left: 0;
+    }
+  
+    .form-control-contacto {
+      width: 100%;
+    }
+  
+    .form-control-contacto-motivo {
+      width: 100%;
+    }
+  }
+  
+
+
 
