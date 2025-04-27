@@ -46,7 +46,7 @@ class Home extends BaseController
         $data['titulo']='Metodos de Pagos';
         return view('front/head_view',$data) 
         .view('front/plantilla/nav_view')
-        .view('front/Metodos de Pagos') 
+        .view('front/MetodosDePagos') 
         .view('front/footer_view');
     }
 

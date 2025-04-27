@@ -1,16 +1,3 @@
-<!-- <div>
-   <div>
-        <img src="assets\img\principal\fotosPrincipal/equipo.png" alt="quipo.png">
-    </div>
-
-    <div>
-        <h2>Nosotros</h2>
-        <p class="presentacion">Avícola Santa Ana S.A. es una empresa líder en la producción de huevos en la provincia de Corrientes, Argentina. <br>
-           Fundada en 1985, somos la primera y única compañía avícola de la región, 
-           con una trayectoria de más de 35 años dedicada a ofrecer productos frescos, nutritivos y de calidad.</p>
-    </div>
-
-</div> -->
 
 <div class="card-equipo">
 <div class="card mb-3">
