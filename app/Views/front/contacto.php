@@ -2,9 +2,11 @@
 <div class="contactanos">
         <h4>Contactanos</h4>
 </div>
-<div class="contacto-general">
+
 <!-- Formulario de contacto-->
+<div class="contacto-general">
 <form class="form-contacto">
+
     <!-- Formulario de nombre completo -->
     <div class="row-mb-3-contacto">
       <label for="inputEmail3" class="col-sm-2-col-form-label-contacto">Nombre completo</label>
@@ -12,6 +14,7 @@
         <input type="nombreCompleto" class="form-control-contacto" id="inputEmail3">
       </div>
     </div>
+
     <!-- Formulario de correo electronico -->
     <div class="row-mb-3-contacto">
       <label for="inputEmail3" class="col-sm-2-col-form-label-contacto">Correo electrónico</label>
@@ -19,6 +22,7 @@
           <input type="email" class="form-control-contacto" id="inputEmail3">
         </div>
     </div>
+
     <!-- Formulario de telefono de contacto -->
     <div class="row-mb-3-contacto">
       <label for="inputEmail3" class="col-sm-2-col-form-label-contacto">Teléfono de contacto</label>
@@ -26,6 +30,7 @@
           <input type="númeroTeléfono" class="form-control-contacto" id="inputEmail3">
         </div>
     </div>
+
     <!-- Formulario de motivo -->
     <div class="row-mb-3-contacto">
       <label for="inputEmail3" class="col-sm-2-col-form-label-contacto">Motivo</label>
@@ -34,9 +39,11 @@
           <textarea id="mensaje" class="form-control-contacto-motivo"></textarea>
         </div>
       </div>
+
     <!-- Boton de enviar mensaje -->
     <button type="submit" class="btn-btn-primary-contacto">Enviar mensaje</button>
 </form>
+
 <!-- Datos de contacto  -->
 <div class="datos">
     <h6>Lineas de contacto: </h6>

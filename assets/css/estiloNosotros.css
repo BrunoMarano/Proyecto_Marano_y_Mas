@@ -1,4 +1,68 @@
-.titulo-principal{
-    text-align: center;
+/* Estilo de titulo principal */
+.nosotros-principal{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 70px;
+}
+
+h5 {
     font-size: xx-large;
+    text-align: center;
+    color: #ffd100
+}
+
+.nosotros-párrafo{
+    margin-top: 20px;
+    text-align:center;
+    font-size: larger;
+}
+
+/* Estilo de notas */
+.card-mb-3-nosotros{
+    display: flex;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+    padding: 50px;
+}
+
+.card-body-nosotros{
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilo de imagen */
+.img-fluid-nosotros{
+    width: 600px;
+    height: 400px;
+    border-radius: 5%;
+}
+
+@media (max-width: 768px) {
+    .nosotros-general{
+        width: 500px;
+    }
+    .card-mb-3-nosotros {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nosotros-principal h5 {
+        font-size: 2rem;
+    }
+
+    .nosotros-párrafo {
+        font-size: 1rem;
+    }
+
+    .card-equipo-nosotros{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    .img-fluid-nosotros{
+        width: 400px;
+        border-radius: 5%;
+    }
 }

@@ -6,7 +6,7 @@ class Home extends BaseController
 {
     public function index()
     {
-        $data['titulo']='Principal';
+        $data['titulo']='Avicola Santa Ana';
        return view('front/head_view',$data) 
        .view('front/plantilla/nav_view') 
        .view('front/plantilla/carousel') 
@@ -34,7 +34,7 @@ class Home extends BaseController
 
     public function contacto(){
 
-        $data['titulo']='Promociones';
+        $data['titulo']='Contacto';
         return view('front/head_view',$data) 
         .view('front/plantilla/nav_view')
         .view('front/contacto') 
