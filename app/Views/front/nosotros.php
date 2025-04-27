@@ -2,7 +2,7 @@
 <!-- Nota principal -->
 <div class="nosotros-principal">
     <!-- div texto -->
-    <h5 class="nosotros-principal-titulo">Acerca de nosotros</h5>
+    <h5 class="nosotros-titulo">Acerca de nosotros</h5>
     <p class="nosotros-párrafo">
         Avícola Santa Ana S.A. es una empresa líder en la producción de huevos en la provincia de Corrientes, Argentina.
         Fundada en 1985, somos la primera y única compañía avícola de la región, 
@@ -26,7 +26,7 @@
         </div>
         <!-- div texto -->
         <div class="card-body-nosotros">
-            <h5 class="card-title-nosotros">Objetivos</h5>
+            <h5 class="nosotros-titulo">Objetivos</h5>
             <p class="nosotros-párrafo">
             Ser la mayor productora de huevos de la industria Argentina. Reconocida por la calidad de sus productos, 
             la capacidad e integridad de su capital humano y el nivel vanguardista de tecnología empleada en el 
@@ -44,7 +44,7 @@
     <div class="card-mb-3-nosotros">
         <!-- div texto -->
         <div class="card-body-nosotros">
-            <h5 class="card-title-nosotros">Nuestro equipo</h5>
+            <h5 class="nosotros-titulo">Nuestro equipo</h5>
             <p class="nosotros-párrafo">
             El Director General de la empresa es el Dr. Daniel Enciso Piazza quien se encuentra acompañado por 
             Lisandro Encizo Piazza (Miembro activo de la dirección), Rocío Enciso Piazza (Integrante de la familia 
@@ -71,7 +71,7 @@
         </div>
         <!-- div texto -->
         <div class="card-body-nosotros">
-            <h5 class="card-title-nosotros">Cultura organizacional</h5>
+            <h5 class="nosotros-titulo">Cultura organizacional</h5>
             <p class="nosotros-párrafo">
             La cultura de la organización se divide y complementa en función de los estilos de dirección que han 
             moldeado la compañía. 
