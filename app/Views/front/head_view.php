@@ -11,6 +11,7 @@
     <link href="assets/css/footer.css" rel="stylesheet">
     <link href="assets/css/principal.css" rel="stylesheet">
     <link href="assets/css/login.css" rel ="stylesheet">
+    <link href="assets/css/error.css" rel="stylesheet">
     <script src="assets/js/bootstrap.bundle.min.js" integrity="" crossorigin=""></script>
     <link href="assets/css/estiloNosotros.css" rel="stylesheet" >
     <link href="assets/css/estiloContacto.css" rel="stylesheet" >

@@ -12,3 +12,5 @@ $routes->get('Contacto', 'Home::contacto');
 $routes->get('Metodos de Pagos', 'Home::metodosPagos');
 $routes->get('Sucursales', 'Home::sucursales');
 $routes->get('Login', 'Home::login');
+$routes->get('Register', 'Home::register');
+$routes->get('Error', 'Home::error');
