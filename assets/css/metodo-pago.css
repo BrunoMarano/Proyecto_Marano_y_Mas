@@ -5,7 +5,7 @@
     font-style: bold;
     border-color: #333533;
     margin-top: 2%;
-    /* opacity: 0.5; */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 
 .card-mb-3-mp{
@@ -32,11 +32,13 @@
     color:#333533;
     opacity: 0.3;
     font-style: bold;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 .card-envio-mp h6{
     margin-top: 20px;
     text-align:center;
     font-size: larger;
+    font-family: 'Poppins', sans-serif;
 }
 
 .sucursales-mp{
@@ -95,4 +97,8 @@
 .Consultanos-mp{
     font-style: bold;
     text-decoration: solid;
+}
+
+.card-title{
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
