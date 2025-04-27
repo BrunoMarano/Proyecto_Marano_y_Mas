@@ -1,4 +1,98 @@
-.div-boton-metodos_pago{
- width: 10%;
- 
+.metodos_pagos-principal-titulo{
+    text-align: center;
+    color:#ffd632;
+    font-size:xx-large;
+    font-style: bold;
+    border-color: #333533;
+    margin-top: 2%;
+    /* opacity: 0.5; */
+}
+
+.card-mb-3-mp{
+    display: flex;
+    padding: 50px;
+}
+
+.card-body-mp{
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilo de imagen */
+.img-fluid-mp{ 
+    border-radius: 8px;
+    height: auto;
+    
+}
+
+.card-body-mp h5{
+    font-size: xx-large;
+    text-align: center;
+    color:#333533;
+    opacity: 0.3;
+    font-style: bold;
+}
+.card-envio-mp h6{
+    margin-top: 20px;
+    text-align:center;
+    font-size: larger;
+}
+
+.sucursales-mp{
+    font-style: bold;
+    text-decoration: solid;
+}
+
+.card-title{
+    font-size: xx-large;
+    text-align: center;
+    color:#333533;
+    opacity: 0.3;
+    font-style: bold;
+}
+
+.card-img-bottom-tarjeta{
+    width: 30%;
+    text-align: center;
+}
+
+.card-mp-tarjeta{
+    width: 50%;
+    text-align: center;
+    
+}
+
+.card-img-bottom-tarjeta{
+  border: 3px solid black; /* Borde negro de 3 píxeles */
+  border-radius: 8px;      /* Opcional: bordes levemente redondeados */
+  height: auto;
+  margin-top: 2%;
+  width: 40%;
+  margin-bottom: 10%;
+}
+
+.card-img-bottom-efectivo{
+    border: 3px solid black; /* Borde negro de 3 píxeles */
+    border-radius: 8px;      /* Opcional: bordes levemente redondeados */
+    height: auto;
+    margin-top: 2%;
+    width: 15%;
+    margin-bottom: 10%;
+  }
+
+.card-mp-efectivo{
+    width: 50%;
+    text-align: center;
+    align-items: end;
+}
+
+.mp-efectivo-tarjeta{
+    display: flex;
+
+}
+
+.Consultanos-mp{
+    font-style: bold;
+    text-decoration: solid;
 }
