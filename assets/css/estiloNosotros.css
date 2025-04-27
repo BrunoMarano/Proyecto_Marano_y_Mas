@@ -43,8 +43,12 @@ h5 {
         width: 500px;
     }
     .card-mb-3-nosotros {
+        display: flex;
         flex-direction: column;
         padding: 20px;
+        margin: 0;
+        position: relative;
+        width: 100%;
     }
 
     .nosotros-principal h5 {

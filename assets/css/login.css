@@ -2,6 +2,10 @@
     margin-top: 5%;
     margin-bottom: 2%;
     text-align: center;
+<<<<<<< HEAD
+=======
+
+>>>>>>> f6197b90f355900ef312b8ca7ee1bd7c514aa11b
 }
 
 .login{
@@ -53,7 +57,8 @@
 }
 
 .div-register a{
-    
+    text-decoration: none;
+    color: #333533;
 }
 
 .btn-regis{
@@ -63,10 +68,21 @@
     color: #333533;
 }
 
+.btn a{
+    text-decoration: none;
+    color: #333533;
+}
+
 
 .btn-regis:hover {
     background-color: #333533;
-    color: white;
     margin: auto;
 }
 
+.a-register:hover {
+    color: white;
+}
+
+.btn a:hover{
+    color: whitesmoke;
+}

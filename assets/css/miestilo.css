@@ -1,153 +1,4 @@
-/* .navbar {
-    display: flex;
-    align-items: center;
-    background-color: #ffd100;
-    border-radius: 10px;
-    list-style: none;
-    justify-content: space-between;
-    height: 100px;
-  }
-
-  .menu-p{
-    display: inline-flex;
-    list-style: none;
-    display: flex; 
-    align-items: center
-  }
-
-  .nav_logo {
-    align-self: center;
-    height: 90px;
-  }
-
-  .nav-opciones {
-    color: #202020;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px; /* 10 arriba/abajo, 20 izquierda/derecha 
-    justify-content: space-between;
-  }
-
-  .nav-barrita{
-    background-color: #000; /* Color negro 
-    height: 40px; /* Altura de la barra 
-    width: 5px; /* Que ocupe todo el ancho 
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: sans-serif;
-    margin: 20px;
-  }
-
-  .nav-opciones-sucursal{
-    color: #202020;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 20px; 
-    margin-top: 2px;
-    display: flex;
-  
-  }
-  .nav-opciones-mp{
-    color: #202020;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 20px; 
-    display: flex;
-  }
-
-  .imagen_ig{
-    width: 20px;
-    height: auto;
-  }
-
-  .ig{
-    align-items: end;
-    margin-right: 20px;
-    margin-top: 10px;
-    
-  }
-  .busqueda input {
-    border: none;
-    border-bottom: 2px solid #333;
-    background: transparent;
-    outline: none;
-    color: #202020;
-    padding: 5px;
-  }
-  
-  .busqueda button {
-    background-color: transparent;
-    border: 1px solid #333;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
-  .busqueda{
-    display: flex;
-    justify-content: space-between;
-    margin-left: auto;
-    list-style: none;
-    margin-right: 20px;
-  }
-
-  .d-flex{
-    margin-top: 2px;
-  }
-
-  .busqueda input{
-    background: #333533;
-    border-radius: 5px;
-  }
-
-@media(hover:hover){
-  .nav-opciones:hover{
-    background: #333533;
-    color: #d6d6d6;
-    border-radius: 10px;
-    
-  }
-
-  .nav-opciones-mp:hover{
-    background: #333533;
-    color: #d6d6d6;
-    border-radius: 10px;
- 
-  }
-
-  .nav-opciones-sucursal:hover{
-    background: #333533;
-    color: #d6d6d6;
-    border-radius: 10px;
-   
-  }
-
-}
-
-.barraNegra{
-    background-color: #000; /* Color negro 
-    height: 20px; /* Altura de la barra 
-    width: 100%; /* Que ocupe todo el ancho 
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: sans-serif;
-}
-
-.lupa{
-  height: 20px;
-  width: 20px;
-  margin-right: 5px;
-
-}
-
-.btn{
-  color: #333533;
-}
- */
- .body-imagen {
+.body-imagen {
   background-image: url("../img/principal/logoAvicola/fondo.png");
   background-size: cover;
   background-position: center;
@@ -157,7 +8,7 @@
 
 /* NAVBAR GENERAL */
 .navbar {
-  /* position: fixed; */
+   /* position: fixed;  */
   width: 100%;
   flex-wrap: wrap; 
   justify-content: space-between;
@@ -190,10 +41,17 @@
 }
 
 .nav-login{
-  width: 30%;
-    border-radius: 10px;
-    background-color:#ffee32;
-    color: #333533;
+  text-align: center;
+  border-radius: 5px;
+  border-color: black;
+  background-color: #ffd100;
+  font-size:100%;
+  margin: auto;
+}
+
+.a-login-nav{
+  text-decoration: none;
+  color: #333533;
 }
 
 .menu-p li {
