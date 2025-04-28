@@ -1,0 +1,63 @@
+
+/* Modificaciones del div productos huevos en general */
+.titulo-productos{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.productos-tarjetas{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Modificaciones del texto del titulo */
+.titulo-productos-{
+    font-size: xx-large;
+    text-align: center;
+}
+
+/* Modificaciones de las tarjetas "huevos" */
+.card-productos{
+    background: #ffd100;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card-title-productos{
+    font-weight: bold;
+}
+
+.card-img-top-productos{
+    border-radius: 8px;
+    width: 267px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.card-text-productos{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.btn-primary-productos{
+    border-color: black;
+    border-radius: 10px;
+    background-color: #ffd100;
+    font-weight: bold;
+}
+
+.btn-primary-productos:hover{
+    border-color: black;
+    background-color: #333533;
+    color: white;
+}
