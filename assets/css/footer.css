@@ -1,50 +1,4 @@
-/* .card-footer {
-    background-color: #f8f9fa; Color claro de fondo
-    color: #6c757d;            Color de texto tipo secundario
-    font-size: 0.9rem;         Tamaño de fuente ligeramente más pequeño
-    font-style: italic;        Estilo cursiva
-    padding: 0.75rem 1rem;     Espaciado interno
-    border-top: 1px solid #dee2e6; Línea superior suave
-    text-align: right;         Alineación del texto a la derecha
-    width: 100%;
-    height: 10%;
-  }
-  
 
-  .footer-logo {
-    width: 100px;
-    max-width: 150px;
-    margin: 10px auto;
-    display: block;
-  }
-  
-.derechos-reservados{
-    text-align: center;
-    height: 30px;
-    background-color: rgba(0, 0, 0, 0.6); Negro con 60% de opacidad
-    color: white;                        Texto blanco para contraste
-    padding: 5px;                       Espaciado interno               
-}
-
-.titulo-map{
-    margin-bottom:min-content;
-}
-
-.map-container {
-    align-items:center;
-    width: 40%;
-    height: 40%;
-    border: 4px solid #333;
-    border-radius: 12px;
-    overflow: hidden;
-    margin-left: 30%;
-  }
-
-  iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-  } */
   .card-footer {
     background-color: #f8f9fa;
     padding: 20px;
@@ -113,7 +67,7 @@
   font-size:xx-large;
 }
 
-.contacto{
+.contacto-titulo{
   color: #202020;
   font-size:xx-large;
 }
@@ -156,4 +110,65 @@
 
 .footer{
   align-items: end;
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .footer-wrapper {
+    flex-direction: column;
+    gap: 20px; /* Reducir el espacio entre elementos */
+  }
+
+  .footer-wrapper .logo-container {
+    flex: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-wrapper .map-container {
+    flex: none;; 
+    display: none; /* Ocultar el mapa en pantallas móviles */
+  }
+
+  .redes-p {
+    font-size: large; /* Reducir el tamaño de texto */
+    margin-top: 20px;
+  }
+
+  .footer-logo{
+    text-align: left;
+    width: 30%;
+  }
+
+  .logo-container{
+    width: 4%;
+    text-align: left;
+  }
+
+  .contacto-footer{
+    text-align: left;
+    width: auto;
+  }
+
+  .contacto-titulo p{
+    font-size:medium;
+    font-style: bold;
+  }
+
+.titulo-map{
+  display: none;
+}
+
+.redes-footer{
+  font-size: medium;
+  font-style: bold;
+  text-align: left;
+  width: 100%;
+}
+
+.redes-p{
+  padding-right: 30px;
+}
+
+
 }

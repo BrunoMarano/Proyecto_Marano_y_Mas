@@ -1,6 +1,6 @@
 <div>
     <!-- titulo -->
-  <h5 class="metodos_pagos-principal-titulo">Nuestra Comercializacion</h5>
+  <h4 class="metodos_pagos-principal-titulo">Nuestra Comercializacion</h4>
 </div>
 
   <div class="card-envio-mp">

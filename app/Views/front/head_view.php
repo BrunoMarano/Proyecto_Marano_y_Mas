@@ -13,6 +13,7 @@
     <link href="assets/css/login.css" rel ="stylesheet">
     <link href="assets/css/error.css" rel="stylesheet">
     <link href="assets/css/metodo-pago.css" rel="stylesheet"> 
+    <link href="assets/css/sucursales.css" rel="stylesheet">
     <script src="assets/js/bootstrap.bundle.min.js" integrity="" crossorigin=""></script>
     <link href="assets/css/estiloNosotros.css" rel="stylesheet" >
     <link href="assets/css/estiloContacto.css" rel="stylesheet" >
