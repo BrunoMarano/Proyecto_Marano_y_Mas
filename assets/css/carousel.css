@@ -18,3 +18,24 @@
     font-family: sans-serif;
     
   }
+
+  @media (max-width: 768px) {
+    .carousel {
+        height: 500px; /* Reduce la altura del carrusel en dispositivos pequeños */
+    }
+
+    /* Ajusta la imagen para pantallas pequeñas */
+    .carousel-item img {
+        height: auto; /* Mantiene la proporción y ajusta la imagen */
+        object-fit: contain; /* Asegura que la imagen no se recorte y mantenga la proporción */
+    }
+
+    /* Ajusta la barra gris */
+    .barraGris {
+        height: 4px; /* Hace la barra un poco más pequeña en pantallas móviles */
+    }
+
+    #carouselExampleAutoplaying{
+        height: 500px;
+    }
+}

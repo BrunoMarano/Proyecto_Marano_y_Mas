@@ -55,3 +55,54 @@
     color: white;
     margin: auto;
   }
+
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+      padding: 15px;
+    }
+  
+    /* Imagen dentro de la tarjeta */
+    .col-md-4 img {
+      width: 100%;
+      height: auto;
+      margin-left: 0%;
+    }
+
+    .col-md-4{
+        height: 10%;
+    }
+  
+    /* Colocar la imagen arriba y el texto abajo */
+    .col-md-4, .col-md-8 {
+      width: 100%;
+    }
+  
+    .card-body {
+      padding: 10px;
+    }
+  
+    .card-title {
+      font-size: 20px;
+    }
+  
+    .card-text {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card-title {
+      font-size: 18px;
+    }
+  
+    .card-text {
+      font-size: 12px;
+    }
+
+    .div-boton-equipo {
+        width: 100%; /* Hace que el botón ocupe el 100% del contenedor */
+         /* Aumenta el padding en pantallas pequeñas */
+        font-size: 18px; /* Aumenta el tamaño del texto */
+    }
+  }
