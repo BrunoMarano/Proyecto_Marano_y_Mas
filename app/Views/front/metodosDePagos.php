@@ -34,12 +34,12 @@
     <p class="card-text">Podes abonar con tarjeta.<br><a class="Consultanos-mp" href=<?php echo base_url('Contacto');?>>Consultanos</a> las cuotas sin compromiso.</p>
   </div>
   <img src="assets/img/metodos-pagos/tarjetas.png" class="card-img-bottom-tarjeta" alt="tarjetas.png">
-    </div>
+  </div>
 
     <div class="card-mp-efectivo">
   <div class="card-body">
-    <h5 class="card-title-mp">Ejectivo/Transferencia</h5>
-    <p class="card-text">Podes abonar con efectivo o tranferencia a traves de las sucursales cuando retires el pedido o por medio de un rapipago.</p>
+    <h5 class="card-title-mp">Efectivo/Transferencia</h5>
+    <p class="card-text">Podes abonar con efectivo o tranferencia a traves de las sucursales cuando retires el pedido.</p>
   </div>
   <img src="assets/img/metodos-pagos/efectivo-transferencia.png" class="card-img-bottom-efectivo" alt="tarjetas.png">
     </div>
