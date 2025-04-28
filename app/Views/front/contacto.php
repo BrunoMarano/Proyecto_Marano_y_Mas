@@ -47,13 +47,8 @@
 <!-- Datos de contacto  -->
 <div class="datos">
     <h6>Lineas de contacto: </h6>
-    <p> Teléfono: 379-4167832 
-    <br>Correo electrónico: contacto@avicolasantaana.com
-    <br>Sucursales: 
-    <br>- En Av. Independencia 4437, W3400 Corrientes 
-    <br> De Lunes a viernes: 7:00hs. a 12:00hs. / Sábados: 8:00hs. a 13hs. y 17:00hs. a 21:00hs.
-    <br>- En Av. Maipú 6580 
-    <br> De Lunes a sabado: 8:30hs. a 21:00hs. - Domingos: 9:00hs. a 13:00hs. 
-    </p>
+    <img src="assets\img\Contactos\llamada-telefonica.png" class="img-contactos">&nbsp;<a href="Tel:3794167832">379-4167832</a> </img> 
+    <br><img src="assets\img\Contactos\sobre.png" class="img-contactos">&nbsp;<a> contacto@avicolasantaana.com</a> </img>
+    <br><img src="assets\img\Contactos\marcador.png" class="img-contactos"><a href="<?php echo base_url('Sucursales');?>">Sucursales:</a> </img>
 </div>
 </div>

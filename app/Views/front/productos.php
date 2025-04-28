@@ -12,7 +12,10 @@
             <div class="card-body-productos">
                 <h5 class="card-title-productos">Huevos pequeños</h5>
                 <p class="card-text-productos">Precio: $4.000 c/ maple</p>
-                <a href="#" class="btn btn-primary-productos">Comprar</a>
+                <div class="botones-productos">
+                    <a href="#" class="btn btn-primary-productos">Comprar</a>
+                    <a href="#" class="btn btn-primary-productos">Agregar al carrito</a>
+                </div>
             </div>
         </div>
         <!-- huevos medianos -->
@@ -21,7 +24,10 @@
             <div class="card-body-productos">
                 <h5 class="card-title-productos">Huevos medianos</h5>
                 <p class="card-text-productos">Precio: $5.000 c/ maple</p>
-                <a href="#" class="btn btn-primary-productos">Comprar</a>
+                <div class="botones-productos">
+                    <a href="#" class="btn btn-primary-productos">Comprar</a>
+                    <a href="#" class="btn btn-primary-productos">Agregar al carrito</a>
+                </div>
             </div>
         </div>
         <!-- huevos grandes -->
@@ -30,7 +36,10 @@
             <div class="card-body-productos">
                 <h5 class="card-title-productos">Huevos grandes</h5>
                 <p class="card-text-productos">Precio: $6.000 c/ maple</p>
-                <a href="#" class="btn btn-primary-productos">Comprar</a>
+                <div class="botones-productos">
+                    <a href="#" class="btn btn-primary-productos">Comprar</a>
+                    <a href="#" class="btn btn-primary-productos">Agregar al carrito</a>
+                </div>
             </div>
         </div>
     </div>
@@ -47,7 +56,10 @@
             <div class="card-body-productos">
                 <h5 class="card-title-productos">Pata muslo</h5>
                 <p class="card-text-productos">Precio: $4.000 - 1 kg.</p>
-                <a href="#" class="btn btn-primary-productos">Comprar</a>
+                <div class="botones-productos">
+                    <a href="#" class="btn btn-primary-productos">Comprar</a>
+                    <a href="#" class="btn btn-primary-productos">Agregar al carrito</a>
+                </div>
             </div>
         </div>
         <!-- Pechuga -->
@@ -56,7 +68,10 @@
             <div class="card-body-productos">
                 <h5 class="card-title-productos">Pechuga de pollo</h5>
                 <p class="card-text-productos">Precio: $6.500 - 1kg.</p>
-                <a href="#" class="btn btn-primary-productos">Comprar</a>
+                <div class="botones-productos">
+                    <a href="#" class="btn btn-primary-productos">Comprar</a>
+                    <a href="#" class="btn btn-primary-productos">Agregar al carrito</a>
+                </div>
             </div>
         </div>
     </div>
