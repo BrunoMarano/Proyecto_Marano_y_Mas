@@ -91,6 +91,22 @@
       font-size: 14px;
     }
   }
+
+  @media (max-width: 400px) {
+    .card-title {
+      font-size: 15px;
+    }
+  
+    .card-text {
+      font-size: 10px;
+    }
+
+    .div-boton-equipo {
+        width: 100%; /* Hace que el botón ocupe el 100% del contenedor */
+         /* Aumenta el padding en pantallas pequeñas */
+        font-size: 18px; /* Aumenta el tamaño del texto */
+    }
+  }
   
   @media (max-width: 576px) {
     .card-title {
@@ -103,6 +119,93 @@
 
     .div-boton-equipo {
         width: 100%; /* Hace que el botón ocupe el 100% del contenedor */
+         /* Aumenta el padding en pantallas pequeñas */
+        font-size: 18px; /* Aumenta el tamaño del texto */
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .card-title {
+      font-size: 28px;
+    }
+  
+    .card-text {
+      font-size: 22px;
+    }
+
+    .div-boton-equipo {
+        width: 100%; /* Hace que el botón ocupe el 100% del contenedor */
+         /* Aumenta el padding en pantallas pequeñas */
+        font-size: 18px; /* Aumenta el tamaño del texto */
+    }
+  }
+
+  @media (max-width: 540px) {
+    .card-title {
+      font-size: 30px;
+    }
+  
+    .card-text {
+      font-size: 20px;
+      line-height: 200%;
+    }
+
+    .card-equipo{
+      height: 30%;
+    }
+
+    .img-fluid{
+      height: 30%;
+      margin-top: 0%;
+    }
+
+    .col-md-4{
+      margin-top: 0;
+      height: 30%;
+    }
+
+    .div-boton-equipo {
+        width: 100%; /* Hace que el botón ocupe el 100% del contenedor */
+         /* Aumenta el padding en pantallas pequeñas */
+        font-size: 18px; /* Aumenta el tamaño del texto */
+    }
+  }
+
+  @media (max-width: 800px) {
+    .card-title {
+      font-size: 30px;
+    }
+  
+    .card-text {
+      font-size: 20px;
+      line-height: 200%;
+    }
+
+    .card-equipo{
+      height: 30%;
+    }
+
+    .img-fluid{
+      height: 30%;
+      margin-top: 0%;
+    }
+
+    .col-md-4{
+      margin-top: 0;
+      height: 30%;
+    }
+
+    .div-boton-equipo {
+        width: 100%; /* Hace que el botón ocupe el 100% del contenedor */
+         /* Aumenta el padding en pantallas pequeñas */
+        font-size: 18px; /* Aumenta el tamaño del texto */
+    }
+  }
+
+  @media (max-width: 1280px) {
+
+    .div-boton-equipo {
+        width: 60%; /* Hace que el botón ocupe el 100% del contenedor */
          /* Aumenta el padding en pantallas pequeñas */
         font-size: 18px; /* Aumenta el tamaño del texto */
     }

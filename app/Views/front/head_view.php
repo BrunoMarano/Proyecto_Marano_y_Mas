@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initialscale=1,shrink-to-fit=no">
     
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/footer.css" rel="stylesheet">
     <link href="assets/css/miestilo.css" rel="stylesheet">
     <link href="assets/css/carousel.css" rel="stylesheet">
-    <link href="assets/css/footer.css" rel="stylesheet">
+
     <link href="assets/css/principal.css" rel="stylesheet">
     <link href="assets/css/login.css" rel ="stylesheet">
     <link href="assets/css/error.css" rel="stylesheet">

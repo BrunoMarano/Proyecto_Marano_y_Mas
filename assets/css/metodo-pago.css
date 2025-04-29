@@ -105,10 +105,7 @@
     text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 
-
-
-/* Tablet (máximo 768px) */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .metodos_pagos-principal-titulo {
         font-size: 1.8rem; /* Ajustar el tamaño de la fuente */
     }
@@ -139,7 +136,7 @@
     }
 }
 
-/* Móviles (máximo 480px) */
+
 @media (max-width: 480px) {
     .metodos_pagos-principal-titulo {
         font-size: 1.5rem;
@@ -163,10 +160,14 @@
         text-align: center;
     }
 
-    .card-img-bottom-tarjeta,
-    .card-img-bottom-efectivo {
+    .card-img-bottom-tarjeta {
         width: 90%;
         max-width: 200px; /* Ajustar aún más el tamaño de las imágenes */
+    }
+    
+    .card-img-bottom-efectivo{
+        width: 40%;
+        height: auto;
     }
 
     .card-title-mp{
@@ -176,9 +177,8 @@
     }
 
     .card-mp-efectivo {
-        display: inline-block;
         text-align: center;
-        margin: 0 auto;
+        width: 100%;
     }
     .mp-efectivo-tarjeta {
         text-align: center;
@@ -189,31 +189,16 @@
         padding: 10px;
     }
 
-    .card-mp-efectivo{
-        padding: 10px;
-        width: 40%;
-    }
-
-    .card-body{
-        width: 100%;
-    }
-
-    .card-body p{
-        text-align: center;
-        height: 30%;
-        line-height: 1;
-    }
-
-    .card-body-mp h5 {
-        font-size: 1rem;
-    }
-
-    .card-title-mp{
-        font-size: medium;
-    }
-
-    .card-envio-mp h6 {
-        font-size: 1rem;
-    }
+    .card-title-mp {
+        font-size: 18px;
+      }
+    
+      .card-text {
+        font-size: 13px;
+      }
+    
+      .Consultanos-mp {
+        font-size: 14px;
+      }
 }
 

@@ -1,11 +1,14 @@
 .carousel{
     width: 100%; /* o 100%, o un valor fijo como 1200px */
-    height: 800px;
+    height: 600px;
     /* aspect-ratio: 12 / 5; */
     margin: auto;
-    overflow: hidden
+    overflow: hidden;
+    border-radius: 20px;
     
 }
+
+
 
 .barraGris{
     background-color:#d6d6d6 ; /* Color negro*/ 
@@ -36,6 +39,101 @@
     }
 
     #carouselExampleAutoplaying{
-        height: 500px;
+        height: 30%;
+    }
+}
+@media (max-width: 1024px) {
+    .carousel {
+        height: 50%; /* Reduce la altura del carrusel en dispositivos pequeños */
+    }
+
+    .d-block{
+        height: 30%;
+    }
+
+    /* Ajusta la imagen para pantallas pequeñas */
+    .carousel-item img {
+        height: auto; /* Mantiene la proporción y ajusta la imagen */; /* Asegura que la imagen no se recorte y mantenga la proporción */
+    }
+
+    /* Ajusta la barra gris */
+    .barraGris {
+        height: 4px; /* Hace la barra un poco más pequeña en pantallas móviles */
+    }
+
+    #carouselExampleAutoplaying{
+        height: 30%;
+    }
+}
+
+@media (max-width: 540px) {
+    .carousel {
+        height: 30%; /* Reduce la altura del carrusel en dispositivos pequeños */
+    }
+
+    .d-block{
+        height: 30%;
+    }
+
+    /* Ajusta la imagen para pantallas pequeñas */
+    .carousel-item img {
+        height: auto; /* Mantiene la proporción y ajusta la imagen */; /* Asegura que la imagen no se recorte y mantenga la proporción */
+    }
+
+    /* Ajusta la barra gris */
+    .barraGris {
+        height: 4px; /* Hace la barra un poco más pequeña en pantallas móviles */
+    }
+
+    #carouselExampleAutoplaying{
+        height: 30%;
+    }
+}
+
+@media (max-width: 344px) {
+    .carousel {
+        height: 30%; /* Reduce la altura del carrusel en dispositivos pequeños */
+    }
+
+    .d-block{
+        height: 30%;
+    }
+
+    /* Ajusta la imagen para pantallas pequeñas */
+    .carousel-item img {
+        height: auto; /* Mantiene la proporción y ajusta la imagen */; /* Asegura que la imagen no se recorte y mantenga la proporción */
+    }
+
+    /* Ajusta la barra gris */
+    .barraGris {
+        height: 4px; /* Hace la barra un poco más pequeña en pantallas móviles */
+    }
+
+    #carouselExampleAutoplaying{
+        height: 30%;
+    }
+}
+
+@media (max-width: 400px) {
+    .carousel {
+        height: 30%; /* Reduce la altura del carrusel en dispositivos pequeños */
+    }
+
+    .d-block{
+        height: 30%;
+    }
+
+    /* Ajusta la imagen para pantallas pequeñas */
+    .carousel-item img {
+        height: auto; /* Mantiene la proporción y ajusta la imagen */; /* Asegura que la imagen no se recorte y mantenga la proporción */
+    }
+
+    /* Ajusta la barra gris */
+    .barraGris {
+        height: 4px; /* Hace la barra un poco más pequeña en pantallas móviles */
+    }
+
+    #carouselExampleAutoplaying{
+        height: 30%;
     }
 }

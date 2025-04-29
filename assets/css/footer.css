@@ -113,6 +113,11 @@
 }
 
 /* Responsivo para pantallas pequeñas */
+
+
+
+
+
 @media (max-width: 768px) {
   .footer-wrapper {
     flex-direction: column;
@@ -170,5 +175,292 @@
   padding-right: 30px;
 }
 
+.derechos-reservados {
+  font-size: 14px; /* Un poco más pequeño */
+  padding: 10px 5px; /* Menos padding */
+}
 
+
+}
+
+@media (max-width: 853px) {
+  .footer-wrapper {
+    flex-direction: column;
+    gap: 20px; /* Reducir el espacio entre elementos */
+  }
+
+  .footer-wrapper .logo-container {
+    flex: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-wrapper .map-container {
+    flex: none;; 
+    display: none; /* Ocultar el mapa en pantallas móviles */
+  }
+
+  .redes-p {
+    font-size: large; /* Reducir el tamaño de texto */
+    margin-top: 20px;
+  }
+
+  .footer-logo{
+    text-align: left;
+    width: 30%;
+  }
+
+  .logo-container{
+    width: 4%;
+    text-align: left;
+  }
+
+  .contacto-footer{
+    text-align: left;
+    width: auto;
+  }
+
+  .contacto-titulo p{
+    font-size:30px;
+    font-style: bold;
+  }
+
+  .contacto-items{
+    font-size: large;
+  }
+
+.titulo-map{
+  display: none;
+}
+
+.redes-footer{
+  font-size: medium;
+  font-style: bold;
+  text-align: left;
+  width: 100%;
+}
+
+.redes-footer a{
+  height: 10%;
+}
+
+.redes-p{
+  padding-right: 15%;
+  font-size: 30px;
+}
+
+
+}
+
+ @media (max-width: 1024px) { 
+  .footer-wrapper {
+    flex-direction: column;
+    gap: 20px; /* Reducir el espacio entre elementos */
+  }
+
+  .footer-wrapper .logo-container {
+    flex: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .redes-p {
+    font-size: large; /* Reducir el tamaño de texto */
+    margin-top: 20px;
+  }
+
+  .footer-logo{
+    text-align: left;
+    width: 30%;
+  }
+
+  .logo-container{
+    width: 4%;
+    text-align: left;
+  }
+
+  .contacto-footer{
+    text-align: left;
+    width: auto;
+  }
+
+  .contacto-titulo p{
+    font-size:30px;
+    font-style: bold;
+  }
+
+  .contacto-items{
+    font-size: large;
+  }
+
+.redes-footer{
+  font-size: medium;
+  font-style: bold;
+  text-align: left;
+  width: 100%;
+}
+
+.imagenes-footer{
+  height: auto;
+  width: 40%;
+
+}
+
+.redes-p{
+  padding-right: 12%;
+  font-size: 30px;
+}
+
+
+ } 
+
+/* Responsividad para pantallas muy chicas (celulares chicos) */
+@media (max-width: 400px) {
+  .derechos-reservados {
+      font-size: 7px; /* Más pequeño aún */
+      line-height: 1.4; /* Mejor separación de líneas */
+  }
+}
+
+@media (max-width: 500px) {
+  .derechos-reservados {
+      font-size: 8px; /* Más pequeño aún */
+      line-height: 1.4; /* Mejor separación de líneas */
+  }
+}
+
+
+@media (max-width: 800px) {
+  .derechos-reservados {
+      font-size: 10px; /* Más pequeño aún */
+      line-height: 1.4; /* Mejor separación de líneas */
+  }
+}
+
+@media (max-width: 344px) {
+  /* Ajustes para todo el footer */
+  .footer-wrapper {
+    flex-direction: column; /* Para apilar los elementos */
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .footer-logo {
+    width: 100px; /* Logo más pequeño */
+  }
+
+  /* Ajustar la sección CONTACTO */
+  .footer .footer-wrapper .contacto-footer {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .contacto-titulo p {
+    font-size: 16px; /* Fuente más pequeña */
+    margin-bottom: 5px;
+  }
+
+  .contacto-items p {
+    font-size: 14px; /* Reducir el tamaño de la fuente */
+    margin: 2px 0; /* Espacio pequeño entre los items */
+  }
+
+  /* Ajustar la sección Nuestras redes */
+  .redes-footer {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .redes-p {
+    font-size: 16px; /* Reducir tamaño del texto */
+    margin-bottom: 5px;
+    margin-right: 5%;
+  }
+
+  .imagenes-footer {
+    width: 25px; /* Reducir tamaño de los íconos */
+    height: 25px;
+    margin: 0 5px; /* Reducir el espacio entre íconos */
+  }
+
+  /* Ocultar mapa y sección "Dónde nos encontras" */
+  .map-section {
+    display: none;
+  }
+
+  .logo-redes-footer{
+    margin-left: 15%;
+  }
+
+  /* Ajustar derechos reservados */
+  .derechos-reservados p {
+    font-size: 5px; /* Texto pequeño para derechos reservados */
+    padding: 8px;
+    line-height: 1.4; /* Mejorar legibilidad */
+  }
+}
+
+@media (max-width: 375px) {
+  /* Ajustes para todo el footer */
+  .footer-wrapper {
+    flex-direction: column; /* Para apilar los elementos */
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .footer-logo {
+    width: 100px; /* Logo más pequeño */
+  }
+
+  /* Ajustar la sección CONTACTO */
+  .footer .footer-wrapper .contacto-footer {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .contacto-titulo p {
+    font-size: 16px; /* Fuente más pequeña */
+    margin-bottom: 5px;
+  }
+
+  .contacto-items p {
+    font-size: 14px; /* Reducir el tamaño de la fuente */
+    margin: 2px 0; /* Espacio pequeño entre los items */
+  }
+
+  /* Ajustar la sección Nuestras redes */
+  .redes-footer {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .redes-p {
+    font-size: 16px; /* Reducir tamaño del texto */
+    margin-bottom: 5px;
+    margin-right: 5%;
+  }
+
+  .imagenes-footer {
+    width: 25px; /* Reducir tamaño de los íconos */
+    height: 25px;
+    margin: 0 5px; /* Reducir el espacio entre íconos */
+  }
+
+  /* Ocultar mapa y sección "Dónde nos encontras" */
+  .map-section {
+    display: none;
+  }
+
+  .logo-redes-footer{
+    margin-left: 18%;
+  }
+
+  /* Ajustar derechos reservados */
+  .derechos-reservados p {
+    font-size: 5px; /* Texto pequeño para derechos reservados */
+    padding: 8px;
+    line-height: 1.4; /* Mejorar legibilidad */
+  }
 }
