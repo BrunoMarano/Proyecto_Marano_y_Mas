@@ -79,14 +79,7 @@
             procesos que garantiza la calidad e inocuidad de sus productos. La disciplina, la rutina y la 
             responsabilidad son valores rectores compartidos por los miembros de la organización. Estos valores 
             traccionan en pos del cumplimiento cabal de las estrictas normas sanitarias y de buenas prácticas 
-            de manufactura. 
-            <br>Por otro lado, la segunda generación, a partir de las necesidades que surgieron con el crecimiento 
-            de la compañía, dio origen a la otra cara de la cultura fundadora a partir de un fuerte enfoque hacia 
-            los resultados, principalmente de las actividades comerciales. Esta fuerte inclinación hacia la eficacia 
-            de los recursos empleados en el logro de los objetivos de ventas y logística, genero el nacimiento de 
-            valores de arraigado sentimiento competitivos y de atención al cliente como ser el liderazgo, 
-            la meritocracia, la integridad, la cordialidad y la ambición.
-            </p>
+            de manufactura.
         </div>
     </div>
 </div>

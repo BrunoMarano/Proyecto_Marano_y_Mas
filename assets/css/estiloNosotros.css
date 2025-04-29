@@ -1,73 +1,118 @@
-/* Estilo de titulo principal */
-.nosotros-principal{
+/* Estilos generales */
+.nosotros-general {
+    width: 100%;
+}
+
+/* Estilo de título principal */
+.nosotros-principal {
     margin-top: 50px;
     margin-bottom: 20px;
-    padding: 70px;
+    padding: 30px;
 }
 
 .nosotros-titulo {
     font-size: xx-large;
     text-align: center;
     color: #ffd100;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.nosotros-párrafo{
+.nosotros-párrafo {
     margin-top: 20px;
-    text-align:center;
     font-size: larger;
+    text-align: justify;
 }
 
-/* Estilo de notas */
-.card-mb-3-nosotros{
+/* Estilo de bloques de contenido */
+.card-mb-3-nosotros {
     display: flex;
-    /* margin-top: 10px;
-    margin-bottom: 10px; */
-    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
 }
 
-.card-body-nosotros{
-    padding: 50px;
+.card-body-nosotros {
+    padding: 30px;
     width: 100%;
     text-align: center;
 }
 
 /* Estilo de imagen */
-.img-fluid-nosotros{
+.img-fluid-nosotros {
     width: 600px;
     height: 400px;
     border-radius: 5%;
 }
 
-@media (max-width: 768px) {
-    .nosotros-general{
-        width: 500px;
-    }
-    .card-mb-3-nosotros {
-        display: flex;
+
+@media (max-width: 1024px) {
+        .card-mb-3-nosotros {
         flex-direction: column;
+        align-items: center;
         padding: 20px;
-        margin: 0;
-        position: relative;
-        width: 100%;
     }
 
-    .nosotros-principal h5 {
-        font-size: 2rem;
+    .img-fluid-nosotros {
+        width: 90%;
+        height: auto;
+    }
+
+    .nosotros-principal {
+        padding: 30px;
+    }
+
+    .nosotros-titulo {
+        font-size: large;
     }
 
     .nosotros-párrafo {
-        font-size: 1rem;
+        font-size: medium;
+        padding: 0 20px;
+        text-align: justify;
     }
 
-    .card-equipo-nosotros{
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-
-    .img-fluid-nosotros{
-        width: 400px;
-        border-radius: 5%;
+    .card-body-nosotros {
+        padding: 10px;
     }
 }
+
+@media (min-width: 800px) and (max-width: 850px){
+    .img-fluid-nosotros{
+        display: none;
+    }
+
+}
+
+@media (max-width: 719px) {
+    .card-mb-3-nosotros {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .img-fluid-nosotros {
+        width: 90%;
+        height: auto;
+    }
+
+    .nosotros-principal {
+        padding: 30px;
+    }
+
+    .nosotros-titulo {
+        font-size: large;
+    }
+
+    .nosotros-párrafo {
+        font-size: medium;
+        padding: 0 20px;
+        text-align: justify;
+    }
+
+    .card-body-nosotros {
+        padding: 10px;
+    }
+}
+
+
