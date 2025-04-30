@@ -1,12 +1,13 @@
 .carousel{
     width: 100%; /* o 100%, o un valor fijo como 1200px */
-    height: 600px;
+    height: 400px;
     /* aspect-ratio: 12 / 5; */
     margin: auto;
     overflow: hidden;
     border-radius: 20px;
     
 }
+
 
 
 
