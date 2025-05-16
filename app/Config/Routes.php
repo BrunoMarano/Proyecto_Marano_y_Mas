@@ -13,4 +13,5 @@ $routes->get('Metodos de Pagos', 'Home::metodosPagos');
 $routes->get('Sucursales', 'Home::sucursales');
 $routes->get('Login', 'Home::login');
 $routes->get('Register', 'Home::register');
+$routes->post('/enviar-form', 'Usuario_controller::formValidation');
 $routes->get('Error', 'Home::error');

@@ -97,9 +97,9 @@
 
 .form-control-contacto-motivo {
     width: 600px;
-    height: 300px; /* Altura inicial */
+    height: 300px;
     padding: 8px;
-    resize: vertical; /* Permite al usuario agrandar el textarea hacia abajo */
+    resize: vertical; 
 }
 
 .btn-btn-primary-contacto{
