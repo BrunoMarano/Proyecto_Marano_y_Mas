@@ -15,3 +15,7 @@ $routes->get('Login', 'Home::login');
 $routes->get('Register', 'Home::register');
 $routes->post('/enviar-form', 'Usuario_controller::formValidation');
 $routes->get('Error', 'Home::error');
+$routes->get('/dashboard', 'Dashboard:Index',['filter'=>'auth']);
+$routes->post('/enviarlogin', 'login_controller::auth');
+$routes->get('/panel', 'Panel_controller::index', ['filter' => 'auth']);
+$routes->get('/logout', 'login_controller::logout');
