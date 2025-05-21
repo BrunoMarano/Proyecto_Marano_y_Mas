@@ -59,13 +59,6 @@ class Home extends BaseController
         .view('front/footer_view');
     }
 
-    public function register(){
-        $data['titulo']='Registro';
-        return view('front/head_view',$data)
-        .view('front/plantilla/nav_view')
-        .view('back/usuario/register')
-        .view('front/footer_view');
-    }
 
     public function login(){
         $data['titulo']='Login';

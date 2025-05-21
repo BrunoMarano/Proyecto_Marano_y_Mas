@@ -18,5 +18,5 @@
 </form>
 </div>
 <div class="div-register">
-<button type="submit" class="btn-regis"><a class="a-register" href="<?php echo base_url('Register');?>">Registrarse</a></button>
+<button type="submit" class="btn-regis"><a class="a-register" href="<?php echo base_url('register');?>">Registrarse</a></button>
 </div>

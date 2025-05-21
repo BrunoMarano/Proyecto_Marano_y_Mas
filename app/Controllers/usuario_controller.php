@@ -1,51 +1,52 @@
 <?php
 namespace App\Controllers;
-Use App\Models\Usuarios_model;
-Use CodeIgniter\Controller;
+use App\Models\Usuarios_model;
+use CodeIgniter\Controller;
 
-class Usuario_controller extends Controller{
-    public function_construct(){
+class Usuario_controller extends Controller {
+
+    public function __construct() {
         helper(['form', 'url']);
     }
 
-    public function create(){
-        $data['titulo']='Registro';
-        echo view('front/head_view',$data)
-        echo view('front/plantilla/nav_view')
-        echo view('back/usuario/register')
-        echo view('front/footer_view');
+    public function create() {
+        $data['titulo'] = 'Registro';
+        return view('front/head_view', $data)
+            . view('front/plantilla/nav_view')
+            . view('back/usuario/register')
+            . view('front/footer_view');
     }
 
-    public function formValidation(){
-        $input = $this->validate([
-            'nombre' => 'required|min_legth[3]',
+    public function formValidation() {
+        $validation = $this->validate([
+            'nombre'   => 'required|min_length[3]',
             'apellido' => 'required|min_length[3]|max_length[30]',
-            'usuario' => 'required|min_length[3]',
-            'mail' => 'required|min_length[4]|max_length[100]|valid_mail|is_unique[usuario.mail]',
-            'pass' => 'required|min_length[3]|max_length[10]',
-        ])
-    }
-
-    $formModel = new Usuarios_model();
-
-    if(!$input){
-        $data['data']='Registro';
-        echo view('front/head_view',$data)
-        echo view('front/plantilla/nav_view')
-        echo view('back/usuario/register', ['validation' => $this->validator]);
-        echo view('front/footer_view');
-    }else{
-        $formModel->sabe([
-            'nombre'=> $this->request->getVar('nombre'),
-            'apellido'=> $this->request->getVar('apellido'),
-            'usuario'=> $this->request->getVar('usuario'),
-            'mail'=> $this->request->getVar('mail'),
-            'pass'=> password_hash($this->request->getVar('pass'), PASSWORD_DEFAULT)
+            'usuario'  => 'required|min_length[3]',
+            'email'    => 'required|min_length[4]|max_length[100]|valid_email|is_unique[usuario.email]',
+            'pass'     => 'required|min_length[3]|max_length[10]',
         ]);
 
-        session()->setFlashdata('success', 'Usuario registrado con exito');
-        return $this->response->redirect(to_url("/register"));
+        $formModel = new Usuarios_model();
+
+        if (!$validation) {
+            $data['titulo'] = 'Registro';
+            return view('front/head_view', $data)
+                . view('front/plantilla/nav_view')
+                . view('back/usuario/register', ['validation' => $this->validator])
+                . view('front/footer_view');
+        } else {
+            $formModel->save([
+                'nombre'   => $this->request->getVar('nombre'),
+                'apellido' => $this->request->getVar('apellido'),
+                'usuario'  => $this->request->getVar('usuario'),
+                'email'    => $this->request->getVar('email'),
+                'pass'     => password_hash($this->request->getVar('pass'), PASSWORD_DEFAULT),
+                'perfil_id' => 2, // opcional si lo usás
+                'baja' => 0 // opcional si lo usás
+            ]);
+
+            session()->setFlashdata('success', 'Usuario registrado con éxito');
+            return redirect()->to(base_url('/register'));
+        }
     }
-
-
 }
