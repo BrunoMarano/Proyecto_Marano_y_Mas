@@ -1,56 +1,59 @@
 <?php
 
-namespace App\Controller;
+namespace App\Controllers;
+
 use CodeIgniter\Controller;
 use App\Models\Usuarios_model;
 
-class login_controller extends BaseController{
-    public function index(){
+class login_controller extends BaseController {
+    public function index() {
         helper(['form', 'url']);
+        return view('Controller/login_controller');
     }
 
-    public function auth(){
+    public function auth() {
         $session = session();
         $model = new Usuarios_model();
 
-        $mail = $this->request->getVar('mail');
+        $mail = $this->request->getVar('email');
         $password = $this->request->getVar('pass');
 
-        $data = $model->where('mail', $mail)->first();
-        if($data){
-            $pass = $data['pass'];
-            $ba = $data['baja'];
-            if($ba == 'SI'){
-                $session->setFlashdata('msg', 'usuario dado de baja');
+        $data = $model->where('email', $mail)->first();
+
+        if ($data) {
+            $hash = $data['pass'];
+            $baja = $data['baja'];
+
+            if ($baja === 'SI') {
+                $session->setFlashdata('msg', 'Usuario dado de baja');
                 return redirect()->to('/');
-                $verify_pass = password_verify($password, $pass);
+            }
 
-                if($verify_pass){
-                    $uses_data = [
-                        'id_usuario' => $data['id_usuario'];
-                        'nombre' => $data['nombre'];
-                        'apellido' => $data['apellido'];
-                        'mail' => $data['mail'];
-                        'usuario' => $data['usuario'];
-                        'perfil_id' => $data['perfil_id'];
-                        'logged_in' => TRUE
-                    ];
+            if (password_verify($password, $hash)) {
+                $ses_data = [
+                    'id_usuario' => $data['id_usuario'],
+                    'nombre' => $data['nombre'],
+                    'apellido' => $data['apellido'],
+                    'email' => $data['email'],
+                    'usuario' => $data['usuario'],
+                    'perfil_id' => $data['perfil_id'],
+                    'logged_in' => true
+                ];
 
-                    $session->set($ses_data);
-                    session()->setFlashdata('msg', 'Buenvenido!!');
-                    return redirect()->to('/panel');
-                }else{
-                    $session->setFlashdata('msg', 'Password incorrecto');
-                    return redirect()->to('/login');
-                }
-            }else{
-                $session->setFlashdata('msg', 'No ingreso un email o el mismo es incorrecto');
+                $session->set($ses_data);
+                $session->setFlashdata('msg', '¡Bienvenido!');
+                return redirect()->to('/panel');
+            } else {
+                $session->setFlashdata('msg', 'Contraseña incorrecta');
                 return redirect()->to('/login');
             }
+        } else {
+            $session->setFlashdata('msg', 'El correo no está registrado');
+            return redirect()->to('/login');
         }
     }
 
-    public function logout(){
+    public function logout() {
         $session = session();
         $session->destroy();
         return redirect()->to('/');
