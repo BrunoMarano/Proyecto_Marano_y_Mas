@@ -61,7 +61,7 @@ class Home extends BaseController
 
 
     public function login(){
-        $data['titulo']='Login';
+        $data['titulo']='login';
         return view('front/head_view',$data)
         .view('front/plantilla/nav_view')
         .view('back/usuario/login')

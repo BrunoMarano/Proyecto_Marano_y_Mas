@@ -8,7 +8,7 @@ use App\Models\Usuarios_model;
 class login_controller extends BaseController {
     public function index() {
         helper(['form', 'url']);
-        return view('Controller/login_controller');
+        return view('back/usuario/login');
     }
 
     public function auth() {
@@ -41,15 +41,15 @@ class login_controller extends BaseController {
                 ];
 
                 $session->set($ses_data);
-                $session->setFlashdata('msg', '¡Bienvenido!');
-                return redirect()->to('/panel');
+                $session->setFlashdata('msg', '¡Bienvenido ' . $data['nombre'] . '!');
+                return redirect()->to('login');
             } else {
                 $session->setFlashdata('msg', 'Contraseña incorrecta');
-                return redirect()->to('/login');
+                return redirect()->to('login');
             }
         } else {
             $session->setFlashdata('msg', 'El correo no está registrado');
-            return redirect()->to('/login');
+            return redirect()->to('login');
         }
     }
 

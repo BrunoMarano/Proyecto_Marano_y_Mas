@@ -1,3 +1,7 @@
+<?php
+$session = session();
+$nombre = $session->get('nombre');
+$perfil = $session->get('perfil_id');?>
 
 <link rel="stylesheet" href="styles.css">
 <div>
@@ -16,7 +20,7 @@
 
   <ul class="busqueda">
     <li class="ig"><a href="https://www.instagram.com/avicolasantaana"><img class="imagen_ig" src="assets/img/principal/redes/logoIG.png" alt="logo_ig"></a></li>
-    <li class="nav-login"><a class="a-login-nav" href="<?php echo base_url('Login');?>">Iniciar Sesión</a></li>
+    <li class="nav-login"><a class="a-login-nav" href="<?php echo base_url('login');?>">Iniciar Sesión</a></li>
     <li class="carrito"><a href="#"><img class="imagen_ig" src="assets/img/principal/redes/carrito-de-compras.png" alt="logo_ig"></a></li>
     <li class="nav-login"><a class="a-login-nav" href="<?php echo base_url('Error');?>">Carrito (0) </a></li>
     <li>
