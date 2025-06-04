@@ -6,10 +6,10 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Home::index');
-$routes->get('nosotros', 'Home::nosotros');
-$routes->get('productos', 'Home::productos');
-$routes->get('contacto', 'Home::contacto');
-$routes->get('metodos-de-pagos', 'Home::metodosPagos');
+$routes->get('Nosotros', 'Home::Nosotros');
+$routes->get('Productos', 'Home::Productos');
+$routes->get('Contacto', 'Home::Contacto');
+$routes->get('Metodos-de-pagos', 'Home::MetodosPagos');
 $routes->get('sucursales', 'Home::sucursales');
 $routes->get('login', 'Home::login');
 $routes->post('enviarlogin', 'login_controller::auth');
