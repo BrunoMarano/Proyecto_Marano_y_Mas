@@ -6,7 +6,13 @@
   <!-- Mostrar mensaje -->
   <?php if(session()->getFlashdata('msg')): ?>
     <div class="alert alert-info">
-        <?= session()->getFlashdata('msg') ?>
+        <?php $msg = session()->getFlashdata('msg'); ?>
+        <?php if($msg && is_array($msg)): ?>
+    <div class="alert alert-<?= esc($msg['type']) ?>">
+        <?= esc($msg['body']) ?>
+    </div>
+<?php endif; ?>
+
     </div>
   <?php endif; ?>
   

@@ -9,13 +9,6 @@ $perfil = $session->get('perfil_id');?>
   <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
   <ul class="menu-p">
     <li><a href="<?php echo base_url("/");?>"><img class="nav_logo" src="assets/img/principal/logoAvicola/logoAvicola.png" alt="Logo"></a></li>
-    <li><a class="nav-opciones" href="<?php echo base_url("/");?>">Inicio</a></li>
-    <li><a class="nav-opciones" href="<?php echo base_url('Nosotros');?>">Nosotros</a></li>
-    <li><a class="nav-opciones" href="<?php echo base_url('Productos');?>">Productos</a></li>
-    <li><a class="nav-opciones" href="<?php echo base_url('Contacto');?>">Contacto</a></li>
-    <li><a class="nav-opciones-mp" href="<?php echo base_url('Metodos de Pagos');?>">Metodos de pagos</a></li>
-    <li><a class="nav-opciones-sucursal" href="<?php echo base_url('Sucursales');?>">Sucursales</a></li>
-    
     
     <?php if ($session->get('logged_in')): ?>
       <!-- Evaluamos si el perfil es admin -->
@@ -30,6 +23,13 @@ $perfil = $session->get('perfil_id');?>
         <li><a class="nav-opciones-mp" href="<?php echo base_url('Metodos de Pagos');?>">Metodos de pagos</a></li>
         <li><a class="nav-opciones-sucursal" href="<?php echo base_url('Sucursales');?>">Sucursales</a></li>
       <?php endif; ?>
+    <?php else: ?>
+      <li><a class="nav-opciones" href="<?php echo base_url("/");?>">Inicio</a></li>
+      <li><a class="nav-opciones" href="<?php echo base_url('Nosotros');?>">Nosotros</a></li>
+      <li><a class="nav-opciones" href="<?php echo base_url('Productos');?>">Productos</a></li>
+      <li><a class="nav-opciones" href="<?php echo base_url('Contacto');?>">Contacto</a></li>
+      <li><a class="nav-opciones-mp" href="<?php echo base_url('Metodos de Pagos');?>">Metodos de pagos</a></li>
+      <li><a class="nav-opciones-sucursal" href="<?php echo base_url('Sucursales');?>">Sucursales</a></li>
     <?php endif; ?>
   </ul>
 
