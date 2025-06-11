@@ -29,6 +29,18 @@
                     <?php endif; ?>
                 </div>
                 
+                <div class="mb-2">
+                    <label for="categoria_id" class="form-label">Categoria</label>
+                    <input class="form-control" type="text" name="categoria_id" id="categoria_id" value="<?= set_value('categoria_id');?>" placeholder="Categoria del producto" autofocus>
+                    <!-- Error -->
+                     <?php if($validation->getError('categoria_id')): ?>
+                        <div class="alert alert-danger mt-2">
+                            <?= $validation->getError('categoria_id'); ?>
+                        </div>
+                    <?php endif; ?>
+                </div>
+
+
                 <!-- Costo del producto -->
                 <div class="mb-2">
                     <label for="costo" class="form-label">Costo</label>
@@ -80,7 +92,7 @@
                 <!-- Imagen-->
                 <div class="mb-2">
                     <label for="imagen" class="form-label">Imagen</label>
-                    <input class="form-control" type="text" name="imagen" id="imagen" value="<?= set_value('imagen');?>" placeholder="imagen del producto" autofocus>
+                    <input type="file" name="imagen" id="imagen" accept="imagen/*">
                     <!-- Error -->
                      <?php if($validation->getError('imagen')): ?>
                         <div class="alert alert-danger mt-2">

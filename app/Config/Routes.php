@@ -19,4 +19,7 @@ $routes->post('enviar-form', 'usuario_controller::formValidation');
 $routes->get('error', 'Home::error');
 $routes->get('altaProducto', 'Home::altaProducto', ['filter' => 'auth']);
 $routes->get('panel', 'Panel_controller::index', ['filter' => 'auth']);
+$routes->post('/enviar-prod', 'Productocontroller::store');
+
+
 

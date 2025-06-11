@@ -4,10 +4,9 @@ use App\Models\Producto_Model;
 use App\Models\Usuario_Model;
 use App\Models\Ventas_cabecera_model;
 use App\Models\categoria_model;
-use App\Models\Controller;
 
-class Productocontroller extends Controller{
-    public function_construct(){
+class Productocontroller extends Controllers{
+    public function __construct(){
         helper(['url', 'form']);
         $session=session();
     }
@@ -27,7 +26,7 @@ class Productocontroller extends Controller{
 
     public function creaproducto(){
         $categoriasmodel = new categoria_model();
-        $data('categoria') = $categoriasmodel->getCategorias();
+        $data['categoria'] = $categoriasmodel->getCategorias();
 
         $productoModel = new Producto_Model();
         $data['producto'] = $productoModel->getProductoAll();
@@ -42,9 +41,9 @@ class Productocontroller extends Controller{
     public function store(){
         $input = $this->validate([
             'nombre_prod' => 'required|min_length[3]',
-            'categoria' => 'is_not_unique[categorias.id]',
+            'categoria_id' => 'is_not_unique[categorias.id]',
+            'costo' => 'required|numeric',
             'precio' => 'required|numeric',
-            'precio_vta' => 'required|numeric',
             'stock' => 'required',
             'stock_min' => 'required',
             'imagen' => 'uploaded[imagen]',
@@ -59,20 +58,28 @@ class Productocontroller extends Controller{
 
             $data['titulo'] = 'Alta';
             echo view('front/head_view', $data);
-            echo_view('front/nav_view');
-            echo_view('back/productos/altaProducto', $data);
+            echo view('front/nav_view');
+            echo view('back/productos/altaProducto', $data);
         }else{
             $img = $this->request->getFile('imagen');
             $nombre_aleatorio = $img->getRandomName();
 
             $img->move(ROOTPATH.'assets/uploads', $nombre_aleatorio);
 
+            // if ($file->isValid() && !$img->hasMoved()) {
+            //     $newName = $file->getRandomName();l
+            //     $file->move('uploads/', $newName);
+            //     $rutaImagen = 'uploads/' . $newName;
+            // } else {
+            //     $rutaImagen = null;
+            // }
+
             $data = [
                 'nombre_prod' => $this->request->getVar('nombre_prod'),
                 'imagen' => $img->getName(),
                 'categoria_id' => $this->request->getVar('categoria'),
+                'costo' => $this->request->getVar('costo'),
                 'precio' => $this->request->getVar('precio'),
-                'precio_vta' => $this->request->getVar('precio_vta'),
                 'stock' => $this->request->getVar('stock'),
                 'stock_min' => $this->request->getVar('stock_min'),
             ];

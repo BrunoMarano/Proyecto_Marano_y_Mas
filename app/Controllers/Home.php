@@ -82,5 +82,10 @@ class Home extends BaseController
         .view('back/producto/altaProducto') 
         .view('front/footer_view');
     }
+
+    public function guardar()
+    {
+        return redirect()->to(base_url('altaProducto'))->with('success', 'Producto cargado correctamente.');
+    }
 }
 
