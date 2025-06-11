@@ -17,6 +17,6 @@ $routes->get('logout', 'login_controller::logout');
 $routes->get('register', 'usuario_controller::create');
 $routes->post('enviar-form', 'usuario_controller::formValidation');
 $routes->get('error', 'Home::error');
-$routes->get('dashboard', 'Dashboard::index', ['filter' => 'auth']);
+$routes->get('altaProducto', 'altaProducto::index', ['filter' => 'auth']);
 $routes->get('panel', 'Panel_controller::index', ['filter' => 'auth']);
 

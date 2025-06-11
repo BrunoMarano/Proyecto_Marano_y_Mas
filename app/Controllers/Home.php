@@ -73,5 +73,14 @@ class Home extends BaseController
         return view('front/head_view',$data)
         .view('front/error');
     }
+
+    public function altaProducto(){
+
+        $data['titulo']='Alta de Productos';
+        return view('front/head_view',$data) 
+        .view('front/plantilla/nav_view') 
+        .view('back/producto/altaProducto') 
+        .view('front/footer_view');
+    }
 }
 

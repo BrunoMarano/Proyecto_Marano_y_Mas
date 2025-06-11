@@ -21,7 +21,7 @@ class Productocontroller extends Controller{
         $data['titulo'] = 'Crud_productos';
         echo view('front/head_view_crud', $data);
         echo view('front/nav_view');
-        echo view('back/productos/producto_nuevo_view', $data);
+        echo view('back/productos/altaProducto', $data);
         echo view('front/footer_view');
     }
 
@@ -35,7 +35,7 @@ class Productocontroller extends Controller{
         $data['titulo'] = 'alta producto';
         echo view('front/head_view_crud', $data);
         echo view('front/nav_view');
-        echo view('back/productos/alta_producto_view', $data);
+        echo view('back/productos/altaProducto', $data);
         echo view('front/footer_view');
     }
 
@@ -60,7 +60,7 @@ class Productocontroller extends Controller{
             $data['titulo'] = 'Alta';
             echo view('front/head_view', $data);
             echo_view('front/nav_view');
-            echo_view('back/productos/alta_producto_view', $data);
+            echo_view('back/productos/altaProducto', $data);
         }else{
             $img = $this->request->getFile('imagen');
             $nombre_aleatorio = $img->getRandomName();
@@ -71,7 +71,7 @@ class Productocontroller extends Controller{
                 'nombre_prod' => $this->request->getVar('nombre_prod'),
                 'imagen' => $img->getName(),
                 'categoria_id' => $this->request->getVar('categoria'),
-                'preciod' => $this->request->getVar('precio'),
+                'precio' => $this->request->getVar('precio'),
                 'precio_vta' => $this->request->getVar('precio_vta'),
                 'stock' => $this->request->getVar('stock'),
                 'stock_min' => $this->request->getVar('stock_min'),

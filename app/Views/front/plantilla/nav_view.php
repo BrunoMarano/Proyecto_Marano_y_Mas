@@ -13,7 +13,7 @@ $perfil = $session->get('perfil_id');?>
     <?php if ($session->get('logged_in')): ?>
       <!-- Evaluamos si el perfil es admin -->
       <?php if($perfil == 1): ?>
-        <li><a class="nav-opciones" href="<?php echo base_url('dashboard');?>">Dashborad</a></li>
+        <li><a class="nav-opciones" href="<?php echo base_url('altaProducto');?>">Cargar productos</a></li>
       <!-- Evaluamos si el perfil es de un cliente -->
       <?php elseif ($perfil == 2): ?>
         <li><a class="nav-opciones" href="<?php echo base_url('Nosotros');?>">Nosotros</a></li>

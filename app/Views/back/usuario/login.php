@@ -36,5 +36,5 @@
   </form>
 </div>
 <div class="div-register">
-<button type="submit" class="btn-regis"><a class="btn-regis" href="<?php echo base_url('register'); ?>">Registrarse</a></button>
+<button type="submit" class="btn-regis"><a class="btn-regis" href="<?php echo base_url('login'); ?>">Registrarse</a></button>
 </div>
