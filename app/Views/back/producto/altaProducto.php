@@ -7,9 +7,14 @@
         <?php if(!empty(session()->getFlashdata('fail'))): ?>
             <div class="alert alert-danger"><?= session()->getFlashdata('fail'); ?></div>
         <?php endif; ?>
-        <?php $validation = \Config\Services::validation(); ?>
+
+        <?php if(!empty(session()->getFlashdata('success'))): ?>
             <div class="alert alert-success"><?= session()->getFlashdata('success'); ?></div>
         <?php endif; ?>
+
+        <?php !$validation = \Config\Services::validation(); ?>
+
+
         <!-- Inicio de formulario -->
         <form action="<?= base_url('/enviar-prod'); ?>" method="post" enctype="multipart/form_data">
             <div class="card-body" media="(max-width:568px)">
@@ -23,21 +28,7 @@
                         </div>
                     <?php endif; ?>
                 </div>
-                <div class="mb-2">
-                    <select class="form-control" name="categoria" id="categoria">
-                        <option value="0">Seleccionar categoria</option>
-                        <?php foreach ($categorias as $categoria): ?>
-                            <option value="<?= $categoria['id']; ?>" <?= set_select('categoria', $categoria['id']); ?>>
-                                <?= $categoria['id'], ". ", $categoria['descripcion']; ?>
-                            </option>
-                        <?php endforeach; ?>
-                    </select>
-                    <?php if($validation->getError('categoria')): ?>
-                        <div class="alert alert-danger mt-2">
-                            <?= $validation->getError('categoria'); ?>
-                        </div>
-                    <?php endif; ?>
-                </div>
+                
                 <!-- Costo del producto -->
                 <div class="mb-2">
                     <label for="costo" class="form-label">Costo</label>
