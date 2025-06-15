@@ -19,7 +19,16 @@ $routes->post('enviar-form', 'usuario_controller::formValidation');
 $routes->get('error', 'Home::error');
 $routes->get('altaProducto', 'Home::altaProducto', ['filter' => 'auth']);
 $routes->get('panel', 'Panel_controller::index', ['filter' => 'auth']);
-$routes->post('/enviar-prod', 'Productocontroller::store');
+
+$routes->get('/crear', 'producto_controller::index', ['filter' => 'auth']);
+$routes->get('/agregar', 'producto_controller::index', ['filter' => 'auth']);
+$routes->get('/produ-form', 'producto_controller::creaproducto', ['filter' => 'auth']);
+$routes->post('/enviar-prod', 'producto_controller::store', ['filter' => 'auth']);
+$routes->get('/editar/(:num)', 'producto_controller::singleproducto/$1', ['filter' => 'auth']);
+$routes->post('modifica/(:num)', 'producto_controller::modifica/$1', ['filter' => 'auth']);
+$routes->get('borrar/(:num)', 'producto_controller::deleteproducto/$1');
+$routes->get('/eliminados', 'producto_controllerr:eliminados', ['filter' => 'auth']);
+$routes->get('activar_pro/(:num)', 'producto_controllerr:activarproducto/$1', ['filter' => 'auth']);
 
 
 
