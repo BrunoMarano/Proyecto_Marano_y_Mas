@@ -1,58 +1,80 @@
 <div class="container-fluid" id="carrito">
     <div class="cart">
         <div class="heading">
-            <h2 class="tect-center">Procutos en tu Carrito</h2>
+            <h2 class="text-center">Productos en tu Carrito</h2>
         </div>
 
         <?php if (session()->getFlashdata('mensaje')): ?>
             <div class="alert alert-warning alert-dismissible fade show mt-3 mx-3" role="alert">
                 <?= session()->getFlashdata('mensaje') ?>
-                <button type="button" class="btn-close" data-bs-dimiss="alert" arial-label="cerrar"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
             </div>
         <?php endif; ?>
     </div>
-</div> 
-    <div class="text-center">
-        <?php if (empy($cart)): ?>
-            <p>Para agregar productos al carrito, hace clic en:</p>
-            <a class="btn btn-warnig text-dark mt-2" href="<?= base_url('/todos_p') ?>">
-                <i class="fa-solid fa-circle-chevron-left"></i> Volver al catálogo
-            </a>
-        <?php endif; ?>
-    </div>
-</div> 
+</div>
+
+<div class="text-center">
+    <?php if (empty($cart)): ?>
+        <p>Para agregar productos al carrito, hacé clic en:</p>
+        <a class="btn btn-warning text-dark mt-2" href="<?= base_url('/todos_p') ?>">
+            <i class="fa-solid fa-circle-chevron-left"></i> Volver al catálogo
+        </a>
+    <?php endif; ?>
+</div>
+
 <?php if (!empty($cart)): ?>
-    <form action="<?= base_url('carrito_actualiza') ?>" method="post">
-        <div calss="container my-3">
-            <table class="table table-hover table-dark table-responsive-md">
-                <thead class="table-dark">
-                    <tr>
-                        <th>IMAGEN</th>
-                        <th>PRODUCTOS</th>
-                        <th>PRECIO</th>
-                        <th>CANTIDAD</th>
-                        <th>TOTAL</th>
-                        <th>Cancelar</th>
+<form action="<?= base_url('carrito_actualiza') ?>" method="post">
+    <div class="container my-3">
+        <table class="table table-hover table-dark table-responsive-md">
+            <thead class="table-dark">
+                <tr>
+                    <th>IMAGEN</th>
+                    <th>PRODUCTOS</th>
+                    <th>PRECIO</th>
+                    <th>CANTIDAD</th>
+                    <th>TOTAL</th>
+                    <th>Cancelar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php $gran_total = 0; ?>
+                <?php foreach ($cart as $item): ?>
+                    <?php $gran_total += $item['price'] * $item['qty']; ?>
+
+                    <input type="hidden" name="cart[<?= esc($item['rowid']) ?>][id]" value="<?= esc($item['id']) ?>">
+                    <input type="hidden" name="cart[<?= esc($item['rowid']) ?>][name]" value="<?= esc($item['name']) ?>">
+                    <input type="hidden" name="cart[<?= esc($item['rowid']) ?>][price]" value="<?= esc($item['price']) ?>">
+                    <input type="hidden" name="cart[<?= esc($item['rowid']) ?>][qty]" value="<?= esc($item['qty']) ?>">
+                    <input type="hidden" name="cart[<?= esc($item['rowid']) ?>][imagen]" value="<?= esc($item['imagen']) ?>">
+
+                    <tr class="table-danger align-middle">
+                        <td>
+                            <img src="<?= base_url('assets/uploads/' . $item['imagen']) ?>" width="80" height="80" alt="<?= esc($item['name']) ?>">
+                        </td>
+                        <td><?= esc($item['name']) ?></td>
+                        <td>$ <?= number_format($item['price'], 2) ?></td>
+                        <td>
+                            <a class="btn btn-sm btn-success" href="<?= base_url('carrito_suma/' . $item['rowid']) ?>">+</a>
+                            <?= number_format($item['qty']) ?>
+                            <a class="btn btn-sm btn-success" href="<?= base_url('carrito_resta/' . $item['rowid']) ?>">-</a>
+                        </td>
+                        <td>$ <?= number_format($item['price'] * $item['qty'], 2) ?></td>
+                        <td>
+                            <a href="<?= base_url('carrito_elimina/' . $item['rowid']) ?>">
+                                <img src="<?= base_url('assets/img/carrito.jpg') ?>" width="40" height="40" alt="Eliminar">
+                            </a>
+                        </td>
                     </tr>
-                </thead>
-                <tbody>
-                    <?php $gran_total =0; ?>
-                    <?php foreach ($cart as $item): ?>
-                        <?php
-                            $gran_total += $item['price'] * $item['qty'];
-                            ?>
-                        
-                        <input type="hidden" name="cart[<?= esc($item['rowind']) ?>][id]" value="<?= esc($item['id']) ?>">
-                        <input type="hidden" name="cart[<?= esc($item['rowind']) ?>][rowind]" value="<?= esc($item['rowind']) ?>">
-                        <input type="hidden" name="cart[<?= esc($item['rowind']) ?>][rowind]" value="<?= esc($item['name']) ?>">
-                        <input type="hidden" name="cart[<?= esc($item['rowind']) ?>][rowind]" value="<?= esc($item['price']) ?>">
-                        <input type="hidden" name="cart[<?= esc($item['rowind']) ?>][rowind]" value="<?= esc($item['qty']) ?>">
-                        <input type="hidden" name="cart[<?= esc($item['rowind']) ?>][rowind]" value="<?= esc($item['imagen']) ?>">
-                        <tr clas="table-danger align-middle">
-                            <td><img src="<?= base-url('assets/uploads/' . $item['imagen']) ?>" width="80"
-                            heigth="80" alt="<?= esc($item['name']) ?>"></td>
-                            <td><?= esc($item['name']) ?></td>
-                            <td>$  <?= number_format($item['price'], 2) ?></td>
-                            <td>
-                                <a class="btn btn-sm btn_success" href="<?= base_url('carrito_suma/' . $item['rowind']) ?>">+</a> <?= number_format($item['qty']) ?>
-                                <a class="btn btn-sm btn_success" href="<?= base_url('carrito_resta/' . $item['rowind']) ?>">-</a>
+                <?php endforeach; ?>
+                <tr class="table-light">
+                    <td colspan="4"><strong>Total: $ <?= number_format($gran_total, 2) ?></strong></td>
+                    <td colspan="2" class="text-end">
+                        <input type="button" class="btn btn-primary btn-lg" value="Borrar Carrito" onclick="window.location='<?= base_url('borrar') ?>'">
+                        <input type="button" class="btn btn-secondary btn-lg" value="Comprar" onclick="window.location='<?= base_url('carrito-comprar') ?>'">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</form>
+<?php endif; ?>

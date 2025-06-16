@@ -30,5 +30,13 @@ $routes->get('borrar/(:num)', 'producto_controller::deleteproducto/$1');
 $routes->get('/eliminados', 'producto_controllerr:eliminados', ['filter' => 'auth']);
 $routes->get('activar_pro/(:num)', 'producto_controllerr:activarproducto/$1', ['filter' => 'auth']);
 
-
+$routes->get('/todos_p','carrito_controller::catalogo',['filter' => 'auth']);
+$routes->get('/muestro','carrito_controller::muestra',['filter' => 'auth']);
+$routes->get('/carrito_actualiza','carrito_controller::actualiza_carrito',['filter' => 'auth']);
+$routes->post('carrito/add','carrito_controller::add',['filter' => 'auth']);
+$routes->get('/carrito_elimina/(:any)','carrito_controller::remove/$1',['filter' => 'auth']);
+$routes->get('/borrar','carrito_controller::borrar_carrito',['filter' => 'auth']);
+$routes->get('/carrito-comprar','Ventascontroller::registrar_venta',['filter' => 'auth']);
+$routes->get('/carrito_suma/(:any)','carrito_controller::suma/$1');
+$routes->get('/carrito_resta/(:any)','carrito_controller::resta/$1');
 
