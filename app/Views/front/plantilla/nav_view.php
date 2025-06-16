@@ -13,15 +13,20 @@ $perfil = $session->get('perfil_id');?>
     <?php if ($session->get('logged_in')): ?>
       <!-- Evaluamos si el perfil es admin -->
       <?php if($perfil == 1): ?>
+        <li><a class="nav-opciones" href="<?php echo base_url('/');?>">Inicio</a></li>
         <li><a class="nav-opciones" href="<?php echo base_url('altaProducto');?>">Cargar productos</a></li>
+        <li><a class="nav-opciones" href="<?php echo base_url('');?>">Crud de Usuario</a></li>
+        <li><a class="nav-opciones" href="<?php echo base_url('');?>">Muestras Ventas</a></li>
+        <li><a class="nav-opciones" href="<?php echo base_url('');?>">Consultas</a></li>
+
+        
       <!-- Evaluamos si el perfil es de un cliente -->
       <?php elseif ($perfil == 2): ?>
-        <li><a class="nav-opciones" href="<?php echo base_url('Nosotros');?>">Nosotros</a></li>
-        <li><a class="nav-opciones" href="<?php echo base_url('Productos');?>">Productos</a></li>
-        <li><a class="nav-opciones" href="<?php echo base_url('Contacto');?>">Contacto</a></li>
+        <li><a class="nav-opciones" href="<?php echo base_url('/');?>">Inicio</a></li>
+        <li><a class="nav-opciones" href="<?php echo base_url('');?>">Catalogo</a></li>
+        <li><a class="nav-opciones" href="<?php echo base_url('carrito');?>">Carrito</a></li>
         <li><div class="nav-barrita"></div></li>
-        <li><a class="nav-opciones-mp" href="<?php echo base_url('Metodos de Pagos');?>">Metodos de pagos</a></li>
-        <li><a class="nav-opciones-sucursal" href="<?php echo base_url('Sucursales');?>">Sucursales</a></li>
+        <li><a class="nav-opciones-mp" href="<?php echo base_url('');?>">Mis Compras</a></li>
       <?php endif; ?>
     <?php else: ?>
       <li><a class="nav-opciones" href="<?php echo base_url("/");?>">Inicio</a></li>
