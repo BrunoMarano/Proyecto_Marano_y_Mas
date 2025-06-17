@@ -19,6 +19,7 @@ $routes->post('enviar-form', 'usuario_controller::formValidation');
 $routes->get('error', 'Home::error');
 $routes->get('altaProducto', 'Home::altaProducto', ['filter' => 'auth']);
 $routes->get('panel', 'Panel_controller::index', ['filter' => 'auth']);
+$routes->get('carrito', 'Carrito_Controller::muestra');
 
 $routes->get('/crear', 'producto_controller::index', ['filter' => 'auth']);
 $routes->get('/agregar', 'producto_controller::index', ['filter' => 'auth']);
@@ -30,7 +31,7 @@ $routes->get('borrar/(:num)', 'producto_controller::deleteproducto/$1');
 $routes->get('/eliminados', 'producto_controllerr:eliminados', ['filter' => 'auth']);
 $routes->get('activar_pro/(:num)', 'producto_controllerr:activarproducto/$1', ['filter' => 'auth']);
 
-$routes->get('/todos_p','carrito_controller::catalogo',['filter' => 'auth']);
+$routes->get('/todos_p','carrito_controller::catalogo');
 $routes->get('/muestro','carrito_controller::muestra',['filter' => 'auth']);
 $routes->get('/carrito_actualiza','carrito_controller::actualiza_carrito',['filter' => 'auth']);
 $routes->post('carrito/add','carrito_controller::add',['filter' => 'auth']);

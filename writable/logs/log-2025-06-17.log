@@ -1,0 +1,119 @@
+DEBUG - 2025-06-17 20:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 20:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 20:45:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 20:45:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 20:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 20:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 20:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-17 20:48:25 --> Error: Class "App\Controllers\Config\Services" not found
+[Method: GET, Route: carrito]
+in APPPATH\Controllers\carrito_controller.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\carrito_controller->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-17 20:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 20:50:26 --> Cart Class Initialized
+DEBUG - 2025-06-17 20:50:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 20:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 20:50:30 --> Cart Class Initialized
+DEBUG - 2025-06-17 20:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 20:50:32 --> Cart Class Initialized
+DEBUG - 2025-06-17 20:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 20:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 20:55:21 --> Cart Class Initialized
+CRITICAL - 2025-06-17 20:55:21 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "back/carrito/carrito_parte_view.php"
+[Method: GET, Route: carrito]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('back/carrito/carrito_parte_view.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/carrito/carrito_parte_view', [], true)
+ 3 APPPATH\Controllers\carrito_controller.php(39): view('back/carrito/carrito_parte_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\carrito_controller->muestra()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carrito_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-17 20:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 20:56:37 --> Cart Class Initialized
+DEBUG - 2025-06-17 20:56:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 20:56:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 20:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-17 20:57:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 20:57:50 --> Cart Class Initialized
+DEBUG - 2025-06-17 20:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 20:58:29 --> Cart Class Initialized
+CRITICAL - 2025-06-17 20:58:29 --> Error: Class "App\Controllers\Producto_Model" not found
+[Method: GET, Route: todos_p]
+in APPPATH\Controllers\carrito_controller.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\carrito_controller->catalogo()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carrito_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-17 20:59:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 20:59:23 --> Cart Class Initialized
+CRITICAL - 2025-06-17 20:59:23 --> Error: Class "App\Controllers\producto_Model" not found
+[Method: GET, Route: todos_p]
+in APPPATH\Controllers\carrito_controller.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\carrito_controller->catalogo()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carrito_controller))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-17 21:00:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 21:00:12 --> Cart Class Initialized
+DEBUG - 2025-06-17 21:00:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 21:00:13 --> Cart Class Initialized
+CRITICAL - 2025-06-17 21:00:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "back/carrito/productos_catalogo_view.php"
+[Method: GET, Route: todos_p]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('back/carrito/productos_catalogo_view.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/carrito/productos_catalogo_view', [], true)
+ 3 APPPATH\Controllers\carrito_controller.php(27): view('back/carrito/productos_catalogo_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\carrito_controller->catalogo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carrito_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-17 21:00:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 21:00:59 --> Cart Class Initialized
+DEBUG - 2025-06-17 21:00:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 21:00:59 --> Cart Class Initialized
+CRITICAL - 2025-06-17 21:00:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "back/carrito/productos_catalogo_view.php"
+[Method: GET, Route: todos_p]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('back/carrito/productos_catalogo_view.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/carrito/productos_catalogo_view', [], true)
+ 3 APPPATH\Controllers\carrito_controller.php(27): view('back/carrito/productos_catalogo_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\carrito_controller->catalogo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carrito_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-17 21:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 21:02:11 --> Cart Class Initialized
+DEBUG - 2025-06-17 21:02:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 21:02:12 --> Cart Class Initialized
+CRITICAL - 2025-06-17 21:02:12 --> ParseError: Unclosed '{' on line 18
+[Method: GET, Route: todos_p]
+in APPPATH\Views\back\productos_catalogo_view.php on line 23.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/productos_catalogo_view', [], true)
+ 3 APPPATH\Controllers\carrito_controller.php(27): view('back/productos_catalogo_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\carrito_controller->catalogo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carrito_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-17 21:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 21:04:08 --> Cart Class Initialized
+DEBUG - 2025-06-17 21:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-17 21:04:09 --> Cart Class Initialized

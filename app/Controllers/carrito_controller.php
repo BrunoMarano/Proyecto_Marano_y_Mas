@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use CodeIgniter\Controller;
 use App\Models\Usuarios_model;
-use App\Models\Productos_Model;
+use App\Models\producto_Model;
 use App\Models\Ventas_cabecera_model;
 use App\Models\Ventas_detalle_model;
 
@@ -13,18 +13,18 @@ class carrito_controller extends BaseController{
     public function __construct(){
 
         helper(['form','url','cart']);
-        $cart = Config\Services::cart();
+        $cart = \Config\Services::cart();
         $session = session();
     }
 
     public function catalogo(){
-        $productoModel= new Producto_Model();
-        $data['producto'] = $productoModel->ordenBy('id','DESC')->findAll();
+        $productoModel= new producto_Model();
+        $data['producto'] = $productoModel->orderBy('id','DESC')->findAll();
 
         $dato = ["titulo" => 'Todos los Porductos'];
         echo view('front/head_view', $dato);
         echo view("front/plantilla/nav_view");
-        echo view('back/carrito/productos_catalogo_view',$data);
+        echo view('back/productos_catalogo_view',$data);
         echo view('front/footer_view');
     }
 
@@ -43,8 +43,8 @@ class carrito_controller extends BaseController{
 
     public function add(){
         
-        $cart = Config\Services::cart();
-        $request =  Config\Services::request();
+        $cart = \Config\Services::cart();
+        $request =  \Config\Services::request();
 
         $cart->insert(array(
             'id' => $request->getPost('id_producto'),
@@ -72,22 +72,23 @@ class carrito_controller extends BaseController{
         return redirect()->to(base_url('muestro'));
     }
 
-    public function removew($rowid){
+    public function remove($rowid){
 
         $cart = \Config\Services::cart();
         if($rowid == "all"){
             $cart->destroy();
         } else{
 
-            $cart->remover($rowid);
+            $cart->remove($rowid);
         }
-        return redirect()->back()->whithInput();
+        return redirect()->back()->withInput();
+
     }
 
     public function actualizar_carrito(){
         
-        $cart = Config\Services::cart();
-        $request =  Config\Services::requuest();
+        $cart = \Config\Services::cart();
+        $request =  \Config\Services::request();
 
         $cart->update(array(
             'id' => $request->getPost('id_producto'),
@@ -97,6 +98,7 @@ class carrito_controller extends BaseController{
             'imagen' => $request->getPost('imagen'),
         ));
         return redirect()->back()->withInput();
+
 
     }
 
@@ -109,7 +111,7 @@ class carrito_controller extends BaseController{
     public function suma($rowid){
 
         $cart = \Config\Services::cart();
-        $item = $cart->getOtem($rowid);
+        $item = $cart->getItem($rowid);
         if($item) {
             $cart->update([
                 'rowid' => $rowid,
@@ -133,6 +135,7 @@ class carrito_controller extends BaseController{
                 $cart->remove($rowid);
             }
         }
+        return redirect()->to(base_url('muestro'));
     }
 
 }
