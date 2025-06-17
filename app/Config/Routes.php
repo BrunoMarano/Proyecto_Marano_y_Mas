@@ -9,8 +9,8 @@ $routes->get('/', 'Home::index');
 $routes->get('Nosotros', 'Home::Nosotros');
 $routes->get('Productos', 'Home::Productos');
 $routes->get('Contacto', 'Home::Contacto');
-$routes->get('Metodos-de-pagos', 'Home::MetodosPagos');
-$routes->get('sucursales', 'Home::sucursales');
+$routes->get('Metodos de Pagos', 'Home::metodosPagos');
+$routes->get('Sucursales', 'Home::sucursales');
 $routes->get('login', 'Home::login');
 $routes->post('enviarlogin', 'login_controller::auth');
 $routes->get('logout', 'login_controller::logout');
@@ -19,7 +19,20 @@ $routes->post('enviar-form', 'usuario_controller::formValidation');
 $routes->get('error', 'Home::error');
 $routes->get('altaProducto', 'Home::altaProducto', ['filter' => 'auth']);
 $routes->get('panel', 'Panel_controller::index', ['filter' => 'auth']);
-$routes->get('carrito', 'Carrito_Controller::muestra');
+$routes->get('carrito', 'Carrito_Controller::muestra',  ['filter' => 'cliente']);
+$routes->get('catalogo', 'Carrito_Controller::catalogo');
+
+$routes->get('crud_usuario', 'Usuario_crud_controller::index', ['filter' => 'auth']);
+$routes->get('user-form', 'Usuario_crud_controller::create', ['filter' => 'auth']);
+$routes->get('users-list', 'Usuario_crud_controller::index', ['filter' => 'auth']);
+$routes->get('create-user', 'Usuario_crud_controller::create', ['filter' => 'auth']);
+$routes->post('store-user', 'Usuario_crud_controller::store', ['filter' => 'auth']);
+$routes->get('edit-view/(:num)', 'Usuario_crud_controller::singleUser/$1', ['filter' => 'auth']);
+$routes->post('update-user', 'Usuario_crud_controller::update', ['filter' => 'auth']);
+$routes->get('deletelogico/(:num)', 'Usuario_crud_controller::deletelogico/$1', ['filter' => 'auth']);
+$routes->get('activar/(:num)', 'Usuario_crud_controller::activar/$1', ['filter' => 'auth']);
+
+
 
 $routes->get('/crear', 'producto_controller::index', ['filter' => 'auth']);
 $routes->get('/agregar', 'producto_controller::index', ['filter' => 'auth']);

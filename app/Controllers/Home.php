@@ -9,7 +9,7 @@ class Home extends BaseController
         $data['titulo']='Avicola Santa Ana';
        return view('front/head_view',$data) 
        .view('front/plantilla/nav_view') 
-       .view('front/plantilla/carousel') 
+    //    .view('front/plantilla/carousel') 
        .view('front/plantilla/principal') 
        .view('front/footer_view');
     }   
