@@ -6,7 +6,7 @@ use App\Models\Usuarios_model;
 use App\Models\consulta_Model;
 use CodeIgniter\Controller;
 
-class Usuario_crud_controller extends Controller
+class usuario_crud_controller extends Controller
 {
     public function __construct()
     {
@@ -17,9 +17,9 @@ class Usuario_crud_controller extends Controller
     {
         $userModel = new Usuarios_model();
         $data['users'] = $userModel->orderBy('id_usuario', 'DESC')->findAll();
-        $dato['titulo'] = 'Crud_usuarios';
+        $data['titulo'] = 'Crud_usuarios';
 
-        echo view('front/head_view', $dato);
+        echo view('front/head_view', $data);
         echo view('front/plantilla/nav_view');
         echo view('back/crud_usuario/usuario_nuevo_view', $data);
         echo view('front/footer_view');
@@ -30,8 +30,8 @@ class Usuario_crud_controller extends Controller
         $userModel = new Usuarios_model(); 
         $data['user_obj'] = $userModel->orderBy('id_usuario', 'DESC')->findAll();
 
-        $dato['titulo'] = 'Alta Usuario';
-        echo view('front/head_view', $dato);
+        $data['titulo'] = 'Alta Usuario';
+        echo view('front/head_view', $data);
         echo view('front/plantilla/nav_view');
         echo view('back/crud_usuario/usuario_crud_view', $data);
         echo view('front/footer_view');
@@ -74,8 +74,8 @@ class Usuario_crud_controller extends Controller
         $userModel = new Usuarios_model();
         $data['user_obj'] = $userModel->where('id_usuario', $id)->first(); 
 
-        $dato['titulo'] = 'Crud_usuarios';
-        echo view('front/head_view', $dato);
+        $data['titulo'] = 'Crud_usuarios';
+        echo view('front/head_view', $data);
         echo view('front/plantilla/nav_view');
         echo view('back/crud_usuario/edit_usuarios_view', $data);
         echo view('front/footer_view');

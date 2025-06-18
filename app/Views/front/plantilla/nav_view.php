@@ -17,17 +17,7 @@ $perfil = $session->get('perfil_id');
       <?php if($perfil == 1): ?>
         <li><a class="nav-opciones" href="<?php echo base_url("/");?>">Inicio</a></li>
         <li><a class="nav-opciones" href="<?= base_url('crud_usuario') ?>">Crud de Usuario</a></li>
-        
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="crudDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            CRUD productos
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="crudDropdown">
-            <li><a class="dropdown-item" href="<?= base_url('altaProducto'); ?>">Cargar producto</a></li>
-            <li><a class="dropdown-item" href="<?= base_url('altaProducto'); ?>">Modificar producto</a></li>
-            <li><a class="dropdown-item" href="<?= base_url('altaProducto'); ?>">Eliminar producto</a></li>
-          </ul>
-        </li>
+        <li><a class="nav-opciones" href="<?= base_url('crud_productos') ?>">Crud de Productos</a></li>
         <li class="nav-opciones"><a class="nav-link" href="<?php echo base_url('ventas');?>" taindex="-1" aria-disatabled="true">Muestra ventas</a></li>
         <li class="nav-opciones"><a class="nav-link" href="<?php echo base_url('listar-consultas');?>" tabindex="-1" aria-disatabled="true">Consultas</a></li>        
       </li>

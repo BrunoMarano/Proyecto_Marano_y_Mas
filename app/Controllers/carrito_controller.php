@@ -21,8 +21,8 @@ class carrito_controller extends BaseController{
         $productoModel= new producto_Model();
         $data['producto'] = $productoModel->orderBy('id','DESC')->findAll();
 
-        $dato = ["titulo" => 'Todos los Porductos'];
-        echo view('front/head_view', $dato);
+        $data = ["titulo" => 'Todos los Porductos'];
+        echo view('front/head_view', $data);
         echo view("front/plantilla/nav_view");
         echo view('back/productos_catalogo_view',$data);
         echo view('front/footer_view');
@@ -33,8 +33,8 @@ class carrito_controller extends BaseController{
         $cart = $cart->contents();
         $data['cart'] = $cart;
 
-        $dato['titulo'] = 'Confirmar compra';
-        echo view('front/head_view', $dato);
+        $data['titulo'] = 'Confirmar compra';
+        echo view('front/head_view', $data);
         echo view("front/plantilla/nav_view");
         echo view('back/carrito/carrito_parte_view',$data);
         echo view('front/footer_view');
@@ -47,9 +47,9 @@ class carrito_controller extends BaseController{
         $request =  \Config\Services::request();
 
         $cart->insert(array(
-            'id' => $request->getPost('id_producto'),
+            'id' => $request->getPost('id'),
             'qty' => 1,
-            'name' => $request->getPost('nombre_prod'),
+            'name' => $request->getPost('nombre'),
             'price' => $request->getPost('costo'),
             'imagen' => $request->getPost('imagen'),
         ));
@@ -91,9 +91,9 @@ class carrito_controller extends BaseController{
         $request =  \Config\Services::request();
 
         $cart->update(array(
-            'id' => $request->getPost('id_producto'),
+            'id' => $request->getPost('id'),
             'qty' => 1,
-            'name' => $request->getPost('nombre_prod'),
+            'name' => $request->getPost('nombre'),
             'price' => $request->getPost('costo'),
             'imagen' => $request->getPost('imagen'),
         ));
@@ -114,9 +114,10 @@ class carrito_controller extends BaseController{
         $item = $cart->getItem($rowid);
         if($item) {
             $cart->update([
-                'rowid' => $rowid,
-                'qty' => $item['qty'] + 1
+                'rowid' => $request->getPost('rowid'),
+                'qty' => $request->getPost('qty')
             ]);
+              
         }
         return redirect()->to(base_url('muestro'));
     }
@@ -128,9 +129,10 @@ class carrito_controller extends BaseController{
         if($item){
             if($item['qty'] > 1){
                 $cart->update([
-                    'rowid' => $rowid,
-                    'qty' => $item ['qty'] -1
+                    'rowid' => $request->getPost('rowid'),
+                    'qty' => $request->getPost('qty')
                 ]);
+                  
             } else{
                 $cart->remove($rowid);
             }

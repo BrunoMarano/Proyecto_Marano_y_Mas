@@ -4,8 +4,11 @@ use CodeIgniter\Model;
 
 class producto_Model extends Model {
     protected $table = 'productos';
-    protected $primaryKey = 'id_producto';
-    protected $allowedFields = [
-        'nombre_prod', 'imagen', 'categoria_id', 'costo', 'precio', 'stock', 'stock_min', 'eliminado'
-    ];
+    protected $primaryKey = 'id';
+    protected $allowedFields = ['nombre', 'imagen', 'categoria_id', 'costo', 'precio', 'stock', 'stock_min', 'eliminado'];
+    
+    public function getProductoAll() {
+        return $this->findAll();
+    }
+
 }

@@ -75,11 +75,14 @@ class Home extends BaseController
     }
 
     public function altaProducto(){
+        $categoriaModel = new \App\Models\categoria_Model();
+        $data['titulo'] = 'CRUD productos';
+        $data['categorias'] = $categoriaModel->findAll();
 
-        $data['titulo']='Alta de Productos';
+        $data['titulo']='CRUD productos';
         return view('front/head_view',$data) 
         .view('front/plantilla/nav_view') 
-        .view('back/producto/altaProducto') 
+        .view('back/producto/producto_crud_view') 
         .view('front/footer_view');
     }
 

@@ -19,18 +19,18 @@ $routes->post('enviar-form', 'usuario_controller::formValidation');
 $routes->get('error', 'Home::error');
 $routes->get('altaProducto', 'Home::altaProducto', ['filter' => 'auth']);
 $routes->get('panel', 'Panel_controller::index', ['filter' => 'auth']);
-$routes->get('carrito', 'Carrito_Controller::muestra',  ['filter' => 'cliente']);
-$routes->get('catalogo', 'Carrito_Controller::catalogo');
+$routes->get('carrito', 'carrito_Controller::muestra',  ['filter' => 'cliente']);
+$routes->get('catalogo', 'carrito_Controller::catalogo');
 
-$routes->get('crud_usuario', 'Usuario_crud_controller::index', ['filter' => 'auth']);
-$routes->get('user-form', 'Usuario_crud_controller::create', ['filter' => 'auth']);
-$routes->get('users-list', 'Usuario_crud_controller::index', ['filter' => 'auth']);
-$routes->get('create-user', 'Usuario_crud_controller::create', ['filter' => 'auth']);
-$routes->post('store-user', 'Usuario_crud_controller::store', ['filter' => 'auth']);
-$routes->get('edit-view/(:num)', 'Usuario_crud_controller::singleUser/$1', ['filter' => 'auth']);
+$routes->get('crud_usuario', 'usuario_crud_controller::index', ['filter' => 'auth']);
+$routes->get('user-form', 'usuario_crud_controller::create', ['filter' => 'auth']);
+$routes->get('users-list', 'usuario_crud_controller::index', ['filter' => 'auth']);
+$routes->get('create-user', 'usuario_crud_controller::create', ['filter' => 'auth']);
+$routes->post('store-user', 'usuario_crud_controller::store', ['filter' => 'auth']);
+$routes->get('edit-view/(:num)', 'usuario_crud_controller::singleUser/$1', ['filter' => 'auth']);
 $routes->post('update-user', 'Usuario_crud_controller::update', ['filter' => 'auth']);
-$routes->get('deletelogico/(:num)', 'Usuario_crud_controller::deletelogico/$1', ['filter' => 'auth']);
-$routes->get('activar/(:num)', 'Usuario_crud_controller::activar/$1', ['filter' => 'auth']);
+$routes->get('deletelogico/(:num)', 'usuario_crud_controller::deletelogico/$1', ['filter' => 'auth']);
+$routes->get('activar/(:num)', 'usuario_crud_controller::activar/$1', ['filter' => 'auth']);
 
 
 
@@ -39,14 +39,14 @@ $routes->get('/agregar', 'producto_controller::index', ['filter' => 'auth']);
 $routes->get('/produ-form', 'producto_controller::creaproducto', ['filter' => 'auth']);
 $routes->post('/enviar-prod', 'producto_controller::store', ['filter' => 'auth']);
 $routes->get('/editar/(:num)', 'producto_controller::singleproducto/$1', ['filter' => 'auth']);
-$routes->post('modifica/(:num)', 'producto_controller::modifica/$1', ['filter' => 'auth']);
-$routes->get('borrar/(:num)', 'producto_controller::deleteproducto/$1');
-$routes->get('/eliminados', 'producto_controllerr:eliminados', ['filter' => 'auth']);
-$routes->get('activar_pro/(:num)', 'producto_controllerr:activarproducto/$1', ['filter' => 'auth']);
+$routes->post('/modifica/(:num)', 'producto_controller::modifica/$1', ['filter' => 'auth']);
+$routes->get('/borrar/(:num)', 'producto_controller::deleteproducto/$1');
+$routes->get('/eliminados', 'producto_controller::eliminados', ['filter' => 'auth']);
+$routes->get('/activar_pro/(:num)', 'producto_controller::activarproducto/$1', ['filter' => 'auth']);
 
 $routes->get('/todos_p','carrito_controller::catalogo');
 $routes->get('/muestro','carrito_controller::muestra',['filter' => 'auth']);
-$routes->get('/carrito_actualiza','carrito_controller::actualiza_carrito',['filter' => 'auth']);
+$routes->get('/actualizar_carrito','carrito_controller::actualizar_carrito',['filter' => 'auth']);
 $routes->post('carrito/add','carrito_controller::add',['filter' => 'auth']);
 $routes->get('/carrito_elimina/(:any)','carrito_controller::remove/$1',['filter' => 'auth']);
 $routes->get('/borrar','carrito_controller::borrar_carrito',['filter' => 'auth']);

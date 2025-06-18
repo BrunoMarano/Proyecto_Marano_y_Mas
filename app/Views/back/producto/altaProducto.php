@@ -16,7 +16,7 @@
 
 
         <!-- Inicio de formulario -->
-        <form action="<?= base_url('/enviar-prod'); ?>" method="post" enctype="multipart/form_data">
+        <form action="<?= base_url('/enviar-prod'); ?>" method="post" enctype="multipart/form-data">
             <div class="card-body" media="(max-width:568px)">
                 <div class="mb-2">
                     <label for="nombre_prod" class="form-label">Productos</label>
@@ -29,9 +29,18 @@
                     <?php endif; ?>
                 </div>
                 
+                <!-- Categoría -->
                 <div class="mb-2">
                     <label for="categoria_id" class="form-label">Categoria</label>
-                    <input class="form-control" type="text" name="categoria_id" id="categoria_id" value="<?= set_value('categoria_id');?>" placeholder="Categoria del producto" autofocus>
+                    <select class="form-control" name="categoria_id" id="categoria_id">
+                        <option value="">Seleccionar categoría</option>
+                        <?php foreach($categorias as $categoria): ?>
+                            <option value="<?= $categoria['id_categoria']; ?>" <?= set_select('categoria_id', $categoria['id_categoria']); ?>>
+                                <?= esc($categoria['descripcion']); ?>
+                            </option>
+                        <?php endforeach; ?>
+                    </select>
+
                     <!-- Error -->
                      <?php if($validation->getError('categoria_id')): ?>
                         <div class="alert alert-danger mt-2">
@@ -103,7 +112,7 @@
 
                 <!-- Botones -->
                 <div class="form-group">
-                    <button type="submit" id="send_form" class="2btn btn-success">Enviar</button>
+                    <button type="submit" id="send_form" class="btn btn-success">Enviar</button>
                     <button type="reset" class="btn btn-danger">Cancelar</button>
                     <a href="<?= base_url('crear'); ?>" class="btn btn-secondary">Volver</a>
                 </div>

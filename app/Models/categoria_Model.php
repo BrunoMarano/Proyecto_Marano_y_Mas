@@ -2,8 +2,8 @@
 namespace App\Models;
 use CodeIgniter\Model;
 
-class producto_model extends Model{
-    protected $tablet ='categoria';
+class categoria_Model extends Model{
+    protected $table ='categoria';
     protected $primaryKey = 'id_categoria';
     protected $allowedFields = ['descripcion', 'activo'];
 }
