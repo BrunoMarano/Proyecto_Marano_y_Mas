@@ -39,11 +39,7 @@ $perfil = $session->get('perfil_id');
   </ul>
 
   <ul class="busqueda">
-    <li class="ig">
-      <a href="https://www.instagram.com/avicolasantaana">
-        <img class="imagen_ig" src="<?= base_url('assets/img/principal/redes/logoIG.png') ?>" alt="logo_ig">
-      </a>
-    </li>
+  
 
     <?php if ($session->get('logged_in')): ?>
       <li class="nav-user">

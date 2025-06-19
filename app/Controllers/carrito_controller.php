@@ -18,10 +18,9 @@ class carrito_controller extends BaseController{
     }
 
     public function catalogo(){
-        $productoModel= new producto_Model();
-        $data['producto'] = $productoModel->orderBy('id','DESC')->findAll();
-
-        $data = ["titulo" => 'Todos los Porductos'];
+        $productoModel = new producto_Model();
+        $data['productos'] = $productoModel->orderBy('id','DESC')->findAll();
+        $data['titulo'] = 'Todos los Productos';
         echo view('front/head_view', $data);
         echo view("front/plantilla/nav_view");
         echo view('back/productos_catalogo_view',$data);
@@ -50,7 +49,7 @@ class carrito_controller extends BaseController{
             'id' => $request->getPost('id'),
             'qty' => 1,
             'name' => $request->getPost('nombre'),
-            'price' => $request->getPost('costo'),
+            'price' => $request->getPost('precio'),
             'imagen' => $request->getPost('imagen'),
         ));
         return redirect()->back()->withInput();
@@ -94,7 +93,7 @@ class carrito_controller extends BaseController{
             'id' => $request->getPost('id'),
             'qty' => 1,
             'name' => $request->getPost('nombre'),
-            'price' => $request->getPost('costo'),
+            'price' => $request->getPost('precio'),
             'imagen' => $request->getPost('imagen'),
         ));
         return redirect()->back()->withInput();

@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-md-12">
 
-                    <?php if (!$producto) { ?>
+                    <?php if (!$productos) { ?>
                         <div class="container-fluid">
                             <div class="well">
                                 <h2 class="text-center tit">No hay Productos</h2>
@@ -20,7 +20,7 @@
                         </div>
 
                         <div class="row">
-                            <?php foreach ($producto as $prod): ?>
+                            <?php foreach ($productos as $prod): ?>
                                 <div class="col-md-4 mb-4">
                                     <div class="card h-100">
                                         <img src="<?= base_url('assets/uploads/' . esc($prod['imagen'])) ?>" class="card-img-top" alt="<?= esc($prod['nombre']) ?>" style="height: 200px; object-fit: cover;">
@@ -29,9 +29,9 @@
                                             <p class="card-text">$ <?= number_format($prod['precio'], 2) ?></p>
                                             
                                             <form action="<?= base_url('carrito_add') ?>" method="post">
-                                                <input type="hidden" name="id_producto" value="<?= esc($prod['id']) ?>">
-                                                <input type="hidden" name="nombre_prod" value="<?= esc($prod['nombre']) ?>">
-                                                <input type="hidden" name="costo" value="<?= esc($prod['precio']) ?>">
+                                                <input type="hidden" name="id" value="<?= esc($prod['id']) ?>">
+                                                <input type="hidden" name="nombre" value="<?= esc($prod['nombre']) ?>">
+                                                <input type="hidden" name="precio" value="<?= esc($prod['precio']) ?>">
                                                 <input type="hidden" name="imagen" value="<?= esc($prod['imagen']) ?>">
                                                 <button type="submit" class="btn btn-success w-100">
                                                     <i class="fa fa-cart-plus"></i> Agregar al carrito

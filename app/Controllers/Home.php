@@ -73,22 +73,5 @@ class Home extends BaseController
         return view('front/head_view',$data)
         .view('front/error');
     }
-
-    public function altaProducto(){
-        $categoriaModel = new \App\Models\categoria_Model();
-        $data['titulo'] = 'CRUD productos';
-        $data['categorias'] = $categoriaModel->findAll();
-
-        $data['titulo']='CRUD productos';
-        return view('front/head_view',$data) 
-        .view('front/plantilla/nav_view') 
-        .view('back/producto/producto_crud_view') 
-        .view('front/footer_view');
-    }
-
-    public function guardar()
-    {
-        return redirect()->to(base_url('altaProducto'))->with('success', 'Producto cargado correctamente.');
-    }
 }
 

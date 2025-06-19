@@ -8,6 +8,14 @@ use App\Models\Usuarios_model;
 class login_controller extends BaseController {
     public function index() {
         helper(['form', 'url']);
+        
+        //Muestra mensaje si llegó desde una redirección
+        $redirect = $this->request->getGet('redirect');
+        if ($redirect) {
+            session()->setFlashdata('msg', 'Debes iniciar sesión para continuar.');
+            return redirect()->to('login');
+        }
+
         return view('back/usuario/login');
     }
 

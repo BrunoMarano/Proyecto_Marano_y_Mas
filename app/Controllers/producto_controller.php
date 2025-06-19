@@ -2,26 +2,22 @@
 namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\producto_Model;
-use App\Models\Usuario_Model;
-use App\Models\Ventas_cabecera_model;
 use App\Models\categoria_Model;
 
-class producto_controller extends Controller{
+class producto_controller extends BaseController{
     public function __construct(){
         helper(['url', 'form']);
-        $session=session();
+        $session = session();
     }
 
-    //mostrar los productos en linea
     public function index(){
         $categoriasmodel = new categoria_Model();
         $data['categorias'] = $categoriasmodel->findAll();
         
         $productoModel = new producto_Model();
-        //realizo la consulta para mostrar todos los productos
         $data['productos'] = $productoModel->getProductoAll();
 
-        $data['titulo'] = 'Crud_productos';
+        $data['titulo'] = 'crud_productos';
         echo view('front/head_view', $data);
         echo view('front/plantilla/nav_view');
         echo view('back/producto/producto_crud_view', $data);
@@ -32,13 +28,10 @@ class producto_controller extends Controller{
         $categoriasmodel = new categoria_Model();
         $data['categorias'] = $categoriasmodel->findAll();
 
-        $productoModel = new producto_Model();
-        $data['producto'] = $productoModel->getProductoAll();
-
         $data['titulo'] = 'Alta producto';
         echo view('front/head_view', $data);
         echo view('front/plantilla/nav_view');
-        echo view('back/producto/producto_crud_view', $data);
+        echo view('back/producto/altaProducto', $data);
         echo view('front/footer_view');
     }
 
@@ -59,17 +52,16 @@ class producto_controller extends Controller{
             $categoria_model = new categoria_Model();
             $data['categorias'] = $categoria_model->findAll();
             $data['validation'] = $this->validator;
+            $data['titulo'] = 'Alta producto';
 
-            $data['titulo'] = 'Alta';
             echo view('front/head_view', $data);
             echo view('front/plantilla/nav_view');
-            echo view('back/producto/producto_crud_view', $data);
+            echo view('back/producto/altaProducto', $data);
             echo view('front/footer_view');
-        }else{
+        } else {
             $img = $this->request->getFile('imagen');
             $nombre_aleatorio = $img->getRandomName();
-
-            $img->move(ROOTPATH.'assets/uploads', $nombre_aleatorio);
+            $img->move('assets/uploads', $nombre_aleatorio);
 
             $data = [
                 'nombre' => $this->request->getVar('nombre'),
@@ -87,19 +79,18 @@ class producto_controller extends Controller{
         }
     }
 
-
     public function singleproducto($id = null){
         $productoModel = new producto_Model();
-        $data['old'] = $productoModel->where('id', $id)->first();
+        $data['old'] = $productoModel->find($id);
         if(empty($data['old'])){
-            throw new \CodeIgniter\Exception\PageNotFoundException('No se ha seleccionado');
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('No se ha seleccionado un producto válido');
         }
 
         $categoria_model = new categoria_Model();
         $data['categorias'] = $categoria_model->findAll();
 
-        $data['titulo'] = 'CRUD productos';
-        echo view('front/head_view');
+        $data['titulo'] = 'Editar producto';
+        echo view('front/head_view', $data);
         echo view('front/plantilla/nav_view');
         echo view('back/producto/edit', $data);
         echo view('front/footer_view');
@@ -107,52 +98,57 @@ class producto_controller extends Controller{
 
     public function modifica($id){
         $productoModel = new producto_Model();
-        $producto = $productoModel->where('id', $id)->first();
+        $producto = $productoModel->find($id);
+
+        if(!$producto){
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Producto no encontrado');
+        }
+
         $img = $this->request->getFile('imagen');
 
-    if($img && $img->isValid()){
-        $nombre_aleatorio = $img->getRandomName();
-        $img->move(ROOTPATH.'assets/uploads', $nombre_aleatorio);
+        if($img && $img->isValid() && !$img->hasMoved()){
+            $nombre_aleatorio = $img->getRandomName();
+            $img->move(ROOTPATH.'assets/uploads', $nombre_aleatorio);
+
+            $imagen_nombre = $nombre_aleatorio;
+        } else {
+        
+            $imagen_nombre = $producto['imagen'];
+        }
+
         $data = [
             'nombre' => $this->request->getVar('nombre'),
-            'imagen' => $img && $img->isValid() ? $img->getName() : $id['imagen'],
+            'imagen' => $imagen_nombre,
             'categoria_id' => $this->request->getVar('categoria_id'),
             'costo' => $this->request->getVar('costo'),
             'precio' => $this->request->getVar('precio'),
             'stock' => $this->request->getVar('stock'),
             'stock_min' => $this->request->getVar('stock_min'),
         ];
-    }else{
-        $data = [
-            'nombre' => $this->request->getVar('nombre'),
-            'imagen' => $img->getName(),
-            'categoria_id' => $this->request->getVar('categoria_id'),
-            'costo' => $this->request->getVar('costo'),
-            'precio' => $this->request->getVar('precio'),
-            'stock' => $this->request->getVar('stock'),
-            'stock_min' => $this->request->getVar('stock_min'),
-        ];
+
+        $productoModel->update($id, $data);
+        session()->setFlashdata('success', 'Modificación exitosa...');
+        return redirect()->to(site_url('crear'));
     }
-
-
-    $productoModel->update($id, $data);
-    session()->setFlashdata('success', 'Modificación exitosa...');
-
-    }
-
 
     public function deleteproducto($id){
         $productoModel = new producto_Model();
-        $data['eliminado'] = $productoModel->where('id', $id)->first();
-        $data['eliminado'] = 'SI';
+
+        
+        $data = ['eliminado' => 'SI'];
+
         $productoModel->update($id, $data);
-        return $this->response->redirect(site_url('crear'));
+
+        session()->setFlashdata('success', 'Producto eliminado correctamente.');
+        return redirect()->to(site_url('crear'));
     }
 
     public function eliminados(){
         $productoModel = new producto_Model();
-        $data['producto'] = $productoModel->getProductoAll();
-        $data['titulo'] = "Crud_productos";
+        
+        $data['productos'] = $productoModel->getProductoAll();
+        $data['titulo'] = "Productos eliminados";
+
         echo view('front/head_view', $data);
         echo view('front/plantilla/nav_view');
         echo view('back/producto/producto_eliminado', $data);
@@ -161,11 +157,13 @@ class producto_controller extends Controller{
 
     public function activarproducto($id){
         $productoModel = new producto_Model();
-        $data['eliminado'] = $productoModel->where('id', $id)->first();
-        $data['eliminado'] = 'NO';
+        $data = ['eliminado' => 'NO'];
         $productoModel->update($id, $data);
         session()->setFlashdata('success', 'Activación exitosa...');
-        return $this->response->redirect(site_url('/crear'));
+        return redirect()->to(site_url('crear'));
     }
 
+    public function getProductoAll() {
+        return $this->where('eliminado', 'NO')->findAll();
+    }
 }

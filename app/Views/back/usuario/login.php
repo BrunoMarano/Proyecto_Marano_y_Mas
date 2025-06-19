@@ -6,16 +6,10 @@
   <!-- Mostrar mensaje -->
   <?php if(session()->getFlashdata('msg')): ?>
     <div class="alert alert-info">
-        <?php $msg = session()->getFlashdata('msg'); ?>
-        <?php if($msg && is_array($msg)): ?>
-    <div class="alert alert-<?= esc($msg['type']) ?>">
-        <?= esc($msg['body']) ?>
-    </div>
-<?php endif; ?>
-
+        <?= session()->getFlashdata('msg'); ?>
     </div>
   <?php endif; ?>
-  
+
   <form method="post" action="<?php echo base_url('enviarlogin') ?>">
     <?= csrf_field(); ?>
   
