@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use CodeIgniter\Controller;
 use App\Models\Usuarios_model;
-use App\Models\productos_Model;
+use App\Models\producto_Model;
 use App\Models\Ventas_cabecera_model;
 use App\Models\Ventas_detalle_model;
 
@@ -14,9 +14,9 @@ class Ventascontroller extends Controller{
         $session = session();
         require(APPPATH . 'Controllers/carrito_controller.php');
         $cartController = new carrito_controller();
-        $carrito_contents = $cartController->devolcer_carrito();
+        $carrito_contents = $cartController->devolver_carrito();
 
-        $productoModel = new productos_Model();
+        $productoModel = new producto_Model();
         $ventasModel = new Ventas_cabecera_model();
         $detalleModel = new Ventas_detalle_model();
 
@@ -32,7 +32,7 @@ class Ventascontroller extends Controller{
                 $total += $item['subtotal'];
             } else {
                 $productos_sin_stock[] = $item['name'];
-                $cartController->elimitar_item($item['rowid']);
+                $cartController->eliminar_item($item['rowid']);
             }
         }
         if(!empty($productos_sin_stock)) {
@@ -41,12 +41,13 @@ class Ventascontroller extends Controller{
             return redirect()->to(base_url('muestro'));        
         }
 
-        if(empty($prodcutos_validos)) {
+        if(empty($productos_validos)) {
             $session->setFlashdata('mensaje', 'No hay productos válidos para egistrar la venta.');
             return redirect()->to(base_url('muestro'));  
         }
 
         $nueva_venta = [
+            'fecha' => date('Y-m-d'),
             'usuario_id' => $session->get('id_usuario'),
             'total_venta' => $total
         ];
@@ -77,17 +78,17 @@ class Ventascontroller extends Controller{
 
         $data['titulo'] = "Mi compra";
 
-        echo view('front/head_view_crud', $data);
-        echo view('front/platilla/nav_view');
+        echo view('front/head_view', $data);
+        echo view('front/plantilla/nav_view');
         echo view('back/compras/vista_compras', $data);
         echo view('front/footer_view');
     }
 
-    public function ver_favturas_usuario(){
+    public function ver_facturas_usuario(){
         $ventas = new Ventas_cabecera_model;
 
         $data['ventas'] = $ventas->getVentas($id_usuario);
-        $dato['titulo'] = "Todas mis compras";
+        $data['titulo'] = "Todas mis compras";
 
         echo view('front/head_view_crud',$data);
         echo view('front/platilla/nav_view');

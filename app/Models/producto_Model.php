@@ -11,4 +11,12 @@ class producto_Model extends Model {
         return $this->findAll();
     }
 
+       public function getProducto($id) {
+        return $this->asArray()->find($id);
+    }
+
+    public function updateStock($id, $nuevoStock) {
+        return $this->update($id, ['stock' => $nuevoStock]);
+    }
+
 }

@@ -43,12 +43,16 @@ $routes->get('/eliminados', 'producto_controller::eliminados', ['filter' => 'aut
 $routes->get('activar_pro/(:num)', 'producto_controller::activarproducto/$1', ['filter' => 'auth']);
 
 $routes->get('/todos_p','carrito_controller::catalogo');
-$routes->get('/muestro','carrito_controller::muestra',['filter' => 'auth']);
-$routes->get('/actualizar_carrito','carrito_controller::actualizar_carrito',['filter' => 'auth']);
-$routes->post('carrito_add','carrito_controller::add',['filter' => 'auth']);
-$routes->get('/carrito_elimina/(:any)','carrito_controller::remove/$1',['filter' => 'auth']);
+$routes->get('/muestro','carrito_controller::muestra',['filter' => 'cliente']);
+$routes->get('/actualizar_carrito','carrito_controller::actualizar_carrito',['filter' => 'cliente']);
+$routes->post('carrito_add','carrito_controller::add',['filter' => 'cliente']);
+$routes->get('/carrito_elimina/(:any)','carrito_controller::remove/$1',['filter' => 'cliente']);
 $routes->get('/borrar','carrito_controller::borrar_carrito',['filter' => 'auth']);
-$routes->get('/carrito-comprar','Ventascontroller::registrar_venta',['filter' => 'auth']);
+$routes->get('/carrito-comprar','Ventascontroller::registrar_venta',['filter' => 'cliente']);
 $routes->get('/carrito_suma/(:any)','carrito_controller::suma/$1');
 $routes->get('/carrito_resta/(:any)','carrito_controller::resta/$1');
+
+$routes->get('vista_compras/(:num)','ventasController::ver_Factura/$1', ['filter' => 'cliente']);
+$routes->get('ver_factura_usuario/(:num)','ventasController::ver_facturas_usuario/$1',['filter' => 'cliente']);
+$routes->get('ventas','ventasController::ventas');
 

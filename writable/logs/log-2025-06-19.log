@@ -282,3 +282,654 @@ DEBUG - 2025-06-19 18:49:51 --> Session: Class initialized using 'CodeIgniter\Se
 INFO - 2025-06-19 18:49:51 --> Cart Class Initialized
 DEBUG - 2025-06-19 18:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-06-19 18:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 20:50:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 20:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 20:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 20:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 20:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 20:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 20:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 20:53:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 20:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 20:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 20:53:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 20:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 20:54:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 20:54:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 20:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 20:54:14 --> Cart Class Initialized
+DEBUG - 2025-06-19 20:54:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 20:54:15 --> Cart Class Initialized
+DEBUG - 2025-06-19 20:54:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 20:54:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 20:54:16 --> ErrorException: Array to string conversion
+[Method: GET, Route: login]
+in APPPATH\Views\back\usuario\login.php on line 9.
+ 1 APPPATH\Views\back\usuario\login.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\Proyecto_Marano_y_Mas\\app\\Views\\back\\usuario\\login.php', 9)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Proyecto_Marano_y_Mas\\app\\Views\\back\\usuario\\login.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/usuario/login', [], true)
+ 5 APPPATH\Controllers\Home.php(67): view('back/usuario/login')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->login()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 20:54:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 20:54:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 20:54:18 --> ErrorException: Array to string conversion
+[Method: GET, Route: login]
+in APPPATH\Views\back\usuario\login.php on line 9.
+ 1 APPPATH\Views\back\usuario\login.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\Proyecto_Marano_y_Mas\\app\\Views\\back\\usuario\\login.php', 9)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Proyecto_Marano_y_Mas\\app\\Views\\back\\usuario\\login.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/usuario/login', [], true)
+ 5 APPPATH\Controllers\Home.php(67): view('back/usuario/login')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->login()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 20:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 20:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 20:54:28 --> ErrorException: Array to string conversion
+[Method: GET, Route: login]
+in APPPATH\Views\back\usuario\login.php on line 9.
+ 1 APPPATH\Views\back\usuario\login.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\Proyecto_Marano_y_Mas\\app\\Views\\back\\usuario\\login.php', 9)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Proyecto_Marano_y_Mas\\app\\Views\\back\\usuario\\login.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/usuario/login', [], true)
+ 5 APPPATH\Controllers\Home.php(67): view('back/usuario/login')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->login()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 20:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 20:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 20:56:58 --> Cart Class Initialized
+DEBUG - 2025-06-19 20:56:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 20:56:59 --> Cart Class Initialized
+DEBUG - 2025-06-19 20:57:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 20:57:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 20:57:40 --> ErrorException: Array to string conversion
+[Method: GET, Route: login]
+in APPPATH\Views\back\usuario\login.php on line 9.
+ 1 APPPATH\Views\back\usuario\login.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\Proyecto_Marano_y_Mas\\app\\Views\\back\\usuario\\login.php', 9)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Proyecto_Marano_y_Mas\\app\\Views\\back\\usuario\\login.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/usuario/login', [], true)
+ 5 APPPATH\Controllers\Home.php(67): view('back/usuario/login')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->login()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 20:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 20:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 20:59:29 --> Cart Class Initialized
+DEBUG - 2025-06-19 20:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 20:59:30 --> Cart Class Initialized
+DEBUG - 2025-06-19 20:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 20:59:31 --> Cart Class Initialized
+DEBUG - 2025-06-19 20:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 20:59:31 --> Cart Class Initialized
+DEBUG - 2025-06-19 20:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 20:59:33 --> Cart Class Initialized
+DEBUG - 2025-06-19 20:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 20:59:37 --> Cart Class Initialized
+DEBUG - 2025-06-19 20:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 20:59:38 --> Cart Class Initialized
+DEBUG - 2025-06-19 20:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 20:59:38 --> Cart Class Initialized
+DEBUG - 2025-06-19 20:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 20:59:40 --> Cart Class Initialized
+DEBUG - 2025-06-19 20:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 20:59:46 --> Cart Class Initialized
+CRITICAL - 2025-06-19 20:59:46 --> Error: Call to undefined method App\Controllers\carrito_controller::devolcer_carrito()
+[Method: GET, Route: carrito-comprar]
+in APPPATH\Controllers\ventasController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->registrar_venta()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:00:34 --> Cart Class Initialized
+CRITICAL - 2025-06-19 21:00:34 --> Error: Class "App\Models\productos_Model" not found
+[Method: GET, Route: carrito-comprar]
+in APPPATH\Controllers\ventasController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->registrar_venta()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:01:33 --> Cart Class Initialized
+CRITICAL - 2025-06-19 21:01:33 --> Error: Class "App\Models\Ventas_cabecera_model" not found
+[Method: GET, Route: carrito-comprar]
+in APPPATH\Controllers\ventasController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->registrar_venta()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:03:39 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:03:41 --> Cart Class Initialized
+CRITICAL - 2025-06-19 21:03:41 --> Error: Class "App\Models\Ventas_cabecera_model" not found
+[Method: GET, Route: carrito-comprar]
+in APPPATH\Controllers\ventasController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->registrar_venta()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:04:05 --> Cart Class Initialized
+CRITICAL - 2025-06-19 21:04:05 --> Error: Class "App\Models\ventas_cabecera_model" not found
+[Method: GET, Route: carrito-comprar]
+in APPPATH\Controllers\ventasController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->registrar_venta()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:05:04 --> Cart Class Initialized
+CRITICAL - 2025-06-19 21:05:04 --> Error: Class "App\Models\ventas_cabecera_model" not found
+[Method: GET, Route: carrito-comprar]
+in APPPATH\Controllers\ventasController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->registrar_venta()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:05:05 --> Cart Class Initialized
+CRITICAL - 2025-06-19 21:05:05 --> Error: Class "App\Models\ventas_cabecera_model" not found
+[Method: GET, Route: carrito-comprar]
+in APPPATH\Controllers\ventasController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->registrar_venta()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:05:05 --> Cart Class Initialized
+CRITICAL - 2025-06-19 21:05:05 --> Error: Class "App\Models\ventas_cabecera_model" not found
+[Method: GET, Route: carrito-comprar]
+in APPPATH\Controllers\ventasController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->registrar_venta()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:05:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:05:29 --> Cart Class Initialized
+CRITICAL - 2025-06-19 21:05:29 --> Error: Class "App\Models\ventas_cabecera_model" not found
+[Method: GET, Route: carrito-comprar]
+in APPPATH\Controllers\ventasController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->registrar_venta()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:12:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:12:08 --> Cart Class Initialized
+CRITICAL - 2025-06-19 21:12:08 --> Error: Class "App\Models\Ventas_cabecera_model" not found
+[Method: GET, Route: carrito-comprar]
+in APPPATH\Controllers\ventasController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->registrar_venta()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:12:09 --> Cart Class Initialized
+CRITICAL - 2025-06-19 21:12:09 --> Error: Class "App\Models\Ventas_cabecera_model" not found
+[Method: GET, Route: carrito-comprar]
+in APPPATH\Controllers\ventasController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->registrar_venta()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:12:58 --> Cart Class Initialized
+CRITICAL - 2025-06-19 21:12:58 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\producto_Model::getProducto
+[Method: GET, Route: carrito-comprar]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\ventasController.php(28): CodeIgniter\Model->__call('getProducto', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->registrar_venta()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:14:50 --> Cart Class Initialized
+CRITICAL - 2025-06-19 21:14:50 --> ErrorException: Undefined array key "stock"
+[Method: GET, Route: carrito-comprar]
+in APPPATH\Controllers\ventasController.php on line 30.
+ 1 APPPATH\Controllers\ventasController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "stock"', 'C:\\xampp\\htdocs\\Proyecto_Marano_y_Mas\\app\\Controllers\\ventasController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->registrar_venta()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:17:36 --> Cart Class Initialized
+CRITICAL - 2025-06-19 21:17:36 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\producto_Model::getProducto
+[Method: GET, Route: carrito-comprar]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\ventasController.php(66): CodeIgniter\Model->__call('getProducto', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->registrar_venta()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:17:47 --> Cart Class Initialized
+CRITICAL - 2025-06-19 21:17:47 --> ErrorException: Undefined array key "stock"
+[Method: GET, Route: carrito-comprar]
+in APPPATH\Controllers\ventasController.php on line 30.
+ 1 APPPATH\Controllers\ventasController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "stock"', 'C:\\xampp\\htdocs\\Proyecto_Marano_y_Mas\\app\\Controllers\\ventasController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->registrar_venta()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:18:48 --> Cart Class Initialized
+CRITICAL - 2025-06-19 21:18:49 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\producto_Model::updateStock
+[Method: GET, Route: carrito-comprar]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\ventasController.php(67): CodeIgniter\Model->__call('updateStock', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->registrar_venta()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:19:03 --> Cart Class Initialized
+CRITICAL - 2025-06-19 21:24:48 --> ParseError: syntax error, unexpected token "=>", expecting "]"
+[Method: GET, Route: vista_compras/3]
+in APPPATH\Config\Routes.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:25:23 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 21:25:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:25:29 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:25:31 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:25:33 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:25:33 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:25:34 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:25:36 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 21:25:36 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\ventas_detalle_model::getDetalles
+[Method: GET, Route: vista_compras/4]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\ventasController.php(77): CodeIgniter\Model->__call('getDetalles', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->ver_factura('4')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:32:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-19 21:32:52 --> mysqli_sql_exception: Table 'marano_mas.usuarios' doesn't exist in C:\xampp\htdocs\Proyecto_Marano_y_Mas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Marano_y_Mas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Marano_y_Mas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Marano_y_Mas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Marano_y_Mas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Marano_y_Mas\app\Models\ventas_detalle_model.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Marano_y_Mas\app\Controllers\ventasController.php(77): App\Models\ventas_detalle_model->getDetalles('4')
+#6 C:\xampp\htdocs\Proyecto_Marano_y_Mas\system\CodeIgniter.php(933): App\Controllers\Ventascontroller->ver_factura('4')
+#7 C:\xampp\htdocs\Proyecto_Marano_y_Mas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+#8 C:\xampp\htdocs\Proyecto_Marano_y_Mas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Proyecto_Marano_y_Mas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Proyecto_Marano_y_Mas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\Proyecto_Marano_y_Mas\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-06-19 21:32:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'marano_mas.usuarios' doesn't exist
+[Method: GET, Route: vista_compras/4]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ventas_detalle`
+JOIN `ventas_cabecera` ON `ventas_cabecera`.`id` = `ventas_detalle`.`venta_id`
+JOIN `productos` ON `productos`.`id` = `ventas_detalle`.`producto_id`
+JOIN `usuarios` ON `usuarios`.`id_usuario` = `ventas_cabecera`.`usuario_id`
+WHERE `ventas_cabecera-id` = :ventas_cabecera-id:', [...], false)
+ 2 APPPATH\Models\ventas_detalle_model.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ventasController.php(77): App\Models\ventas_detalle_model->getDetalles('4')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->ver_factura('4')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 21:32:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'marano_mas.usuarios' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `ventas_detalle`
+JOIN `ventas_cabecera` ON `ventas_cabecera`.`id` = `ventas_detalle`.`venta_id`
+JOIN `productos` ON `productos`.`id` = `ventas_detalle`.`producto_id`
+JOIN `usuarios` ON `usuarios`.`id_usuario` = `ventas_cabecera`.`usuario_id`
+WHERE `ventas_cabecera-id` = \'4\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `ventas_detalle`
+JOIN `ventas_cabecera` ON `ventas_cabecera`.`id` = `ventas_detalle`.`venta_id`
+JOIN `productos` ON `productos`.`id` = `ventas_detalle`.`producto_id`
+JOIN `usuarios` ON `usuarios`.`id_usuario` = `ventas_cabecera`.`usuario_id`
+WHERE `ventas_cabecera-id` = \'4\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ventas_detalle`
+JOIN `ventas_cabecera` ON `ventas_cabecera`.`id` = `ventas_detalle`.`venta_id`
+JOIN `productos` ON `productos`.`id` = `ventas_detalle`.`producto_id`
+JOIN `usuarios` ON `usuarios`.`id_usuario` = `ventas_cabecera`.`usuario_id`
+WHERE `ventas_cabecera-id` = :ventas_cabecera-id:', [...], false)
+ 4 APPPATH\Models\ventas_detalle_model.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\ventasController.php(77): App\Models\ventas_detalle_model->getDetalles('4')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->ver_factura('4')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 21:32:52 --> [Caused by] mysqli_sql_exception: Table 'marano_mas.usuarios' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `ventas_detalle`
+JOIN `ventas_cabecera` ON `ventas_cabecera`.`id` = `ventas_detalle`.`venta_id`
+JOIN `productos` ON `productos`.`id` = `ventas_detalle`.`producto_id`
+JOIN `usuarios` ON `usuarios`.`id_usuario` = `ventas_cabecera`.`usuario_id`
+WHERE `ventas_cabecera-id` = \'4\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `ventas_detalle`
+JOIN `ventas_cabecera` ON `ventas_cabecera`.`id` = `ventas_detalle`.`venta_id`
+JOIN `productos` ON `productos`.`id` = `ventas_detalle`.`producto_id`
+JOIN `usuarios` ON `usuarios`.`id_usuario` = `ventas_cabecera`.`usuario_id`
+WHERE `ventas_cabecera-id` = \'4\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `ventas_detalle`
+JOIN `ventas_cabecera` ON `ventas_cabecera`.`id` = `ventas_detalle`.`venta_id`
+JOIN `productos` ON `productos`.`id` = `ventas_detalle`.`producto_id`
+JOIN `usuarios` ON `usuarios`.`id_usuario` = `ventas_cabecera`.`usuario_id`
+WHERE `ventas_cabecera-id` = \'4\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ventas_detalle`
+JOIN `ventas_cabecera` ON `ventas_cabecera`.`id` = `ventas_detalle`.`venta_id`
+JOIN `productos` ON `productos`.`id` = `ventas_detalle`.`producto_id`
+JOIN `usuarios` ON `usuarios`.`id_usuario` = `ventas_cabecera`.`usuario_id`
+WHERE `ventas_cabecera-id` = :ventas_cabecera-id:', [...], false)
+ 5 APPPATH\Models\ventas_detalle_model.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\ventasController.php(77): App\Models\ventas_detalle_model->getDetalles('4')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->ver_factura('4')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-19 21:33:12 --> mysqli_sql_exception: Unknown column 'ventas_cabecera-id' in 'where clause' in C:\xampp\htdocs\Proyecto_Marano_y_Mas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Marano_y_Mas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Proyecto_Marano_y_Mas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Proyecto_Marano_y_Mas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Proyecto_Marano_y_Mas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Marano_y_Mas\app\Models\ventas_detalle_model.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Proyecto_Marano_y_Mas\app\Controllers\ventasController.php(77): App\Models\ventas_detalle_model->getDetalles('4')
+#6 C:\xampp\htdocs\Proyecto_Marano_y_Mas\system\CodeIgniter.php(933): App\Controllers\Ventascontroller->ver_factura('4')
+#7 C:\xampp\htdocs\Proyecto_Marano_y_Mas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+#8 C:\xampp\htdocs\Proyecto_Marano_y_Mas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Proyecto_Marano_y_Mas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Proyecto_Marano_y_Mas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\Proyecto_Marano_y_Mas\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-06-19 21:33:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ventas_cabecera-id' in 'where clause'
+[Method: GET, Route: vista_compras/4]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ventas_detalle`
+JOIN `ventas_cabecera` ON `ventas_cabecera`.`id` = `ventas_detalle`.`venta_id`
+JOIN `productos` ON `productos`.`id` = `ventas_detalle`.`producto_id`
+JOIN `usuario` ON `usuario`.`id_usuario` = `ventas_cabecera`.`usuario_id`
+WHERE `ventas_cabecera-id` = :ventas_cabecera-id:', [...], false)
+ 2 APPPATH\Models\ventas_detalle_model.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ventasController.php(77): App\Models\ventas_detalle_model->getDetalles('4')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->ver_factura('4')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 21:33:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ventas_cabecera-id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `ventas_detalle`
+JOIN `ventas_cabecera` ON `ventas_cabecera`.`id` = `ventas_detalle`.`venta_id`
+JOIN `productos` ON `productos`.`id` = `ventas_detalle`.`producto_id`
+JOIN `usuario` ON `usuario`.`id_usuario` = `ventas_cabecera`.`usuario_id`
+WHERE `ventas_cabecera-id` = \'4\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `ventas_detalle`
+JOIN `ventas_cabecera` ON `ventas_cabecera`.`id` = `ventas_detalle`.`venta_id`
+JOIN `productos` ON `productos`.`id` = `ventas_detalle`.`producto_id`
+JOIN `usuario` ON `usuario`.`id_usuario` = `ventas_cabecera`.`usuario_id`
+WHERE `ventas_cabecera-id` = \'4\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ventas_detalle`
+JOIN `ventas_cabecera` ON `ventas_cabecera`.`id` = `ventas_detalle`.`venta_id`
+JOIN `productos` ON `productos`.`id` = `ventas_detalle`.`producto_id`
+JOIN `usuario` ON `usuario`.`id_usuario` = `ventas_cabecera`.`usuario_id`
+WHERE `ventas_cabecera-id` = :ventas_cabecera-id:', [...], false)
+ 4 APPPATH\Models\ventas_detalle_model.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\ventasController.php(77): App\Models\ventas_detalle_model->getDetalles('4')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->ver_factura('4')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 21:33:12 --> [Caused by] mysqli_sql_exception: Unknown column 'ventas_cabecera-id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `ventas_detalle`
+JOIN `ventas_cabecera` ON `ventas_cabecera`.`id` = `ventas_detalle`.`venta_id`
+JOIN `productos` ON `productos`.`id` = `ventas_detalle`.`producto_id`
+JOIN `usuario` ON `usuario`.`id_usuario` = `ventas_cabecera`.`usuario_id`
+WHERE `ventas_cabecera-id` = \'4\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `ventas_detalle`
+JOIN `ventas_cabecera` ON `ventas_cabecera`.`id` = `ventas_detalle`.`venta_id`
+JOIN `productos` ON `productos`.`id` = `ventas_detalle`.`producto_id`
+JOIN `usuario` ON `usuario`.`id_usuario` = `ventas_cabecera`.`usuario_id`
+WHERE `ventas_cabecera-id` = \'4\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `ventas_detalle`
+JOIN `ventas_cabecera` ON `ventas_cabecera`.`id` = `ventas_detalle`.`venta_id`
+JOIN `productos` ON `productos`.`id` = `ventas_detalle`.`producto_id`
+JOIN `usuario` ON `usuario`.`id_usuario` = `ventas_cabecera`.`usuario_id`
+WHERE `ventas_cabecera-id` = \'4\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ventas_detalle`
+JOIN `ventas_cabecera` ON `ventas_cabecera`.`id` = `ventas_detalle`.`venta_id`
+JOIN `productos` ON `productos`.`id` = `ventas_detalle`.`producto_id`
+JOIN `usuario` ON `usuario`.`id_usuario` = `ventas_cabecera`.`usuario_id`
+WHERE `ventas_cabecera-id` = :ventas_cabecera-id:', [...], false)
+ 5 APPPATH\Models\ventas_detalle_model.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\ventasController.php(77): App\Models\ventas_detalle_model->getDetalles('4')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->ver_factura('4')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 21:34:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "front/head_view_crud.php"
+[Method: GET, Route: vista_compras/4]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('front/head_view_crud.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('front/head_view_crud', [], true)
+ 3 APPPATH\Controllers\ventasController.php(81): view('front/head_view_crud', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->ver_factura('4')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 21:34:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "front/platilla/nav_view.php"
+[Method: GET, Route: vista_compras/4]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('front/platilla/nav_view.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('front/platilla/nav_view', [], true)
+ 3 APPPATH\Controllers\ventasController.php(82): view('front/platilla/nav_view')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->ver_factura('4')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 21:35:03 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "back/compras/vista_compras.php"
+[Method: GET, Route: vista_compras/4]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('back/compras/vista_compras.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/compras/vista_compras', [], true)
+ 3 APPPATH\Controllers\ventasController.php(83): view('back/compras/vista_compras', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->ver_factura('4')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:36:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:36:23 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:36:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:36:25 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:36:26 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:36:26 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:36:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:36:28 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:36:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:36:30 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:36:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:36:30 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:36:31 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:36:33 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:36:33 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:37:24 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:37:28 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 21:37:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "back/compras/vista_compras.php"
+[Method: GET, Route: vista_compras/5]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('back/compras/vista_compras.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/compras/vista_compras', [], true)
+ 3 APPPATH\Controllers\ventasController.php(83): view('back/compras/vista_compras', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->ver_factura('5')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:38:18 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:38:18 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:38:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:38:26 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:38:28 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:38:28 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:38:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:38:29 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:38:30 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 21:38:31 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "back/compras/vista_compras.php"
+[Method: GET, Route: vista_compras/6]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('back/compras/vista_compras.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/compras/vista_compras', [], true)
+ 3 APPPATH\Controllers\ventasController.php(83): view('back/compras/vista_compras', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventascontroller->ver_factura('6')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventascontroller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:39:36 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:40:31 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:41:32 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:42:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:42:39 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:44:29 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:44:30 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:44:58 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:44:58 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:44:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:44:59 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:44:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:44:59 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:45:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:45:02 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:45:03 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:45:03 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:45:03 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:45:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:45:04 --> Cart Class Initialized
+DEBUG - 2025-06-19 21:45:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-19 21:45:04 --> Cart Class Initialized
