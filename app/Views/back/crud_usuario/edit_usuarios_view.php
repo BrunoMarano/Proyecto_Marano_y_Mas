@@ -4,7 +4,7 @@
             <h4>Modificación Usuarios</h4>
         </div>
         <div class="card-body">
-            <form method="post" id="update_user" name="update_user" action="<?= site_url('/borrar'); ?>">
+            <form method="post" id="update_user" name="update_user" action="<?= site_url('/update-user'); ?>">
                 <input type="hidden" name="id" id="id" value="<?= $user_obj['id_usuario']; ?>">
 
                 <div class="form-group">

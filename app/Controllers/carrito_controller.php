@@ -107,35 +107,42 @@ class carrito_controller extends BaseController{
         return $cart->contents();
     }
 
-    public function suma($rowid){
+    public function carrito_resta($rowid){
+        
+    $cart = \Config\Services::cart();
+    $item = $cart->getItem($rowid);
 
-        $cart = \Config\Services::cart();
-        $item = $cart->getItem($rowid);
-        if($item) {
+    if ($item) {
+        if ($item['qty'] > 1) {
+            $nuevaCantidad = $item['qty'] - 1;
+
             $cart->update([
-                'rowid' => $request->getPost('rowid'),
-                'qty' => $request->getPost('qty')
+                'rowid' => $rowid,
+                'qty'   => $nuevaCantidad
             ]);
-              
+        } else {
+            $cart->remove($rowid);
         }
-        return redirect()->to(base_url('muestro'));
     }
 
-    public function resta($rowid){
-        $cart = \Config\Services::cart();
-        $item = $cart->getItem($rowid);
+    return redirect()->to(base_url('muestro'));
+}
 
-        if($item){
-            if($item['qty'] > 1){
-                $cart->update([
-                    'rowid' => $request->getPost('rowid'),
-                    'qty' => $request->getPost('qty')
-                ]);
-                  
-            } else{
-                $cart->remove($rowid);
-            }
-        }
+
+    public function carrito_suma($rowid){
+    
+    $cart = \Config\Services::cart();
+    $item = $cart->getItem($rowid);
+
+    if ($item) {
+        $nuevaCantidad = $item['qty'] + 1;
+
+        $cart->update([
+            'rowid' => $rowid,
+            'qty'   => $nuevaCantidad
+        ]);
+    }
+
         return redirect()->to(base_url('muestro'));
     }
 

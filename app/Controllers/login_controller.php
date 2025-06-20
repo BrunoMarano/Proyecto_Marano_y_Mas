@@ -34,7 +34,7 @@ class login_controller extends BaseController {
 
             if ($baja === 'SI') {
                 $session->setFlashdata('msg', 'Usuario dado de baja');
-                return redirect()->to('/');
+                return redirect()->to('login');
             }
 
             if (password_verify($password, $hash)) {

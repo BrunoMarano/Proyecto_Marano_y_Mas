@@ -8,7 +8,7 @@ class producto_Model extends Model {
     protected $allowedFields = ['nombre', 'imagen', 'categoria_id', 'costo', 'precio', 'stock', 'stock_min', 'eliminado'];
     
     public function getProductoAll() {
-        return $this->findAll();
+        return $this->where('eliminado', '')->findAll();;
     }
 
        public function getProducto($id) {

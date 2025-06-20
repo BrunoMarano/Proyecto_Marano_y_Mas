@@ -2,18 +2,23 @@
     <h2>Hola de nuevo</h2>
 </div>
 
-<div class="login">
+<div class="login" style= "height: 65%" >
   <!-- Mostrar mensaje -->
-  <?php if(session()->getFlashdata('msg')): ?>
+  <?php 
+    $msg = session()->getFlashdata('msg'); 
+    if ($msg): 
+    ?>
     <div class="alert alert-info">
-        <?= session()->getFlashdata('msg'); ?>
+      <?= is_array($msg) ? implode('<br>', array_map('esc', $msg)) : esc($msg); ?>
     </div>
   <?php endif; ?>
+
+
 
   <form method="post" action="<?php echo base_url('enviarlogin') ?>">
     <?= csrf_field(); ?>
   
-    <div class="formulario">
+    <div class="formulario" style="padding-bottom: 5%">
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email</label>
         <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -26,7 +31,7 @@
       </div>
 
     </div>
-    <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+    <button type="submit" class="btn btn-primary" style="margin-bottom: 10px">Iniciar Sesion</button>
   </form>
 </div>
 <div class="div-register">

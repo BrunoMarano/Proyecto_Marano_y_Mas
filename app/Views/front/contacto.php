@@ -1,3 +1,10 @@
+<?php if(session()->getFlashdata('success')): ?>
+  <div class="alert alert-success">
+    <?= session()->getFlashdata('success') ?>
+  </div>
+<?php endif; ?>
+
+
 <!-- Titulo inicial -->
 <div class="contactanos">
         <h4>Contactanos</h4>
@@ -5,13 +12,12 @@
 
 <!-- Formulario de contacto-->
 <div class="contacto-general">
-<form class="form-contacto">
-
+<form class="form-contacto" method="post" action="<?= base_url('guardar-consulta'); ?>">
     <!-- Formulario de nombre completo -->
     <div class="row-mb-3-contacto">
       <label for="inputEmail3" class="col-sm-2-col-form-label-contacto">Nombre completo</label>
       <div>
-        <input type="nombreCompleto" class="form-control-contacto" id="inputEmail3">
+        <input type="text" name="nombre" class="form-control-contacto" placeholder="Tu nombre completo">
       </div>
     </div>
 
@@ -19,7 +25,7 @@
     <div class="row-mb-3-contacto">
       <label for="inputEmail3" class="col-sm-2-col-form-label-contacto">Correo electrónico</label>
         <div class="col-sm-10-contacto">
-          <input type="email" class="form-control-contacto" id="inputEmail3">
+          <input type="email" name="email" class="form-control-contacto" placeholder="Tu correo electrónico">
         </div>
     </div>
 
@@ -27,7 +33,7 @@
     <div class="row-mb-3-contacto">
       <label for="inputEmail3" class="col-sm-2-col-form-label-contacto">Teléfono de contacto</label>
         <div class="col-sm-10-contacto">
-          <input type="númeroTeléfono" class="form-control-contacto" id="inputEmail3">
+          <input type="tel" class="form-control-contacto" name="telefono" id="telefono" pattern="[0-9]+" title="Solo se permiten números" required placeholder="Tu número de teléfono">
         </div>
     </div>
 
@@ -36,12 +42,13 @@
       <label for="inputEmail3" class="col-sm-2-col-form-label-contacto">Motivo</label>
       <!-- <textarea id="mensaje" class="form-control-contacto-textMotivo"></textarea> -->
         <div class="col-sm-10-contacto">
-          <textarea id="mensaje" class="form-control-contacto-motivo"></textarea>
+          <textarea name="mensaje" class="form-control-contacto-motivo" placeholder="Escribí tu mensaje..."></textarea>
         </div>
       </div>
 
     <!-- Boton de enviar mensaje -->
     <button type="submit" class="btn-btn-primary-contacto">Enviar mensaje</button>
+    <button type="reset" class="btn-btn-primary-contacto">Limpiar</button>
 </form>
 
 <!-- Datos de contacto  -->

@@ -1,7 +1,7 @@
 <div class="container-fluid" id="carrito">
     <div class="cart">
         <div class="heading">
-            <h2 class="text-center">Productos en tu Carrito</h2>
+            <h2 class="text-center" style="margin-top: 20px;">Productos en tu Carrito</h2>
         </div>
 
         <?php if (session()->getFlashdata('mensaje')): ?>
@@ -15,10 +15,11 @@
 
 <div class="text-center">
     <?php if (empty($cart)): ?>
-        <p>Para agregar productos al carrito, hacé clic en:</p>
+       <p>Para agregar productos al carrito, vuelvo al catalogo</p>
         <a class="btn btn-warning text-dark mt-2" href="<?= base_url('/todos_p') ?>">
             <i class="fa-solid fa-circle-chevron-left"></i> Volver al catálogo
         </a>
+        <img class="imagenes-footer" src="<?= base_url('assets/img/carrito/carrito_vacio.png') ?>" alt="logoX">
     <?php endif; ?>
 </div>
 
@@ -54,14 +55,15 @@
                         <td><?= esc($item['name']) ?></td>
                         <td>$ <?= number_format($item['price'], 2) ?></td>
                         <td>
-                            <a class="btn btn-sm btn-success" href="<?= base_url('carrito_suma/' . $item['rowid']) ?>">+</a>
-                            <?= number_format($item['qty']) ?>
                             <a class="btn btn-sm btn-success" href="<?= base_url('carrito_resta/' . $item['rowid']) ?>">-</a>
+                            <?= number_format($item['qty']) ?>
+                            <a class="btn btn-sm btn-success" href="<?= base_url('carrito_suma/' . $item['rowid']) ?>">+</a>
+                            
                         </td>
                         <td>$ <?= number_format($item['price'] * $item['qty'], 2) ?></td>
                         <td>
                             <a href="<?= base_url('carrito_elimina/' . $item['rowid']) ?>">
-                                <img src="<?= base_url('assets/img/carrito.jpg') ?>" width="40" height="40" alt="Eliminar">
+                                <img src="<?= base_url('assets/img/carrito/basurero.png') ?>" width="80" height="80" alt="Eliminar">
                             </a>
                         </td>
                     </tr>

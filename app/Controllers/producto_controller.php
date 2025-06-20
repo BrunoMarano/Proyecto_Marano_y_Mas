@@ -143,6 +143,30 @@ class producto_controller extends BaseController{
         return redirect()->to(site_url('crear'));
     }
 
+    public function deletedproducto($id){
+        $productoModel = new producto_Model();
+
+        $producto = $productoModel->find($id);
+
+        if ($producto) {
+        
+            $imagenPath = FCPATH . 'assets/uploads/' . $producto['imagen'];
+            if (is_file($imagenPath)) {
+                unlink($imagenPath);
+            }
+            
+            $productoModel->delete($id);
+
+            session()->setFlashdata('success', 'Producto eliminado correctamente.');
+        
+        } else {
+            session()->setFlashdata('fail', 'Producto no encontrado.');
+        }
+
+        return redirect()->to(base_url('crear'));
+    }
+
+
     public function eliminados(){
         $productoModel = new producto_Model();
         

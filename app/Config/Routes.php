@@ -47,12 +47,20 @@ $routes->get('/muestro','carrito_controller::muestra',['filter' => 'cliente']);
 $routes->get('/actualizar_carrito','carrito_controller::actualizar_carrito',['filter' => 'cliente']);
 $routes->post('carrito_add','carrito_controller::add',['filter' => 'cliente']);
 $routes->get('/carrito_elimina/(:any)','carrito_controller::remove/$1',['filter' => 'cliente']);
-$routes->get('/borrar','carrito_controller::borrar_carrito',['filter' => 'auth']);
+$routes->get('/borrar','carrito_controller::borrar_carrito',['filter' => 'cliente']);
 $routes->get('/carrito-comprar','Ventascontroller::registrar_venta',['filter' => 'cliente']);
-$routes->get('/carrito_suma/(:any)','carrito_controller::suma/$1');
-$routes->get('/carrito_resta/(:any)','carrito_controller::resta/$1');
+$routes->get('/carrito_suma/(:any)','carrito_controller::carrito_suma/$1');
+$routes->get('/carrito_resta/(:any)','carrito_controller::carrito_resta/$1');
 
 $routes->get('vista_compras/(:num)','ventasController::ver_Factura/$1', ['filter' => 'cliente']);
 $routes->get('ver_factura_usuario/(:num)','ventasController::ver_facturas_usuario/$1',['filter' => 'cliente']);
-$routes->get('ventas','ventasController::ventas');
+$routes->get('/ventas','ventasController::ventas', ['filter' => 'cliente']);
+$routes->get('ver_factura_usuario', 'ventasController::misFacturas', ['filter' => 'cliente']);
 
+
+//rutas de consultas
+$routes->post('enviar-contacto', 'contacto_controller::enviar');
+$routes->post('guardar-consulta', 'contacto_controller::guardar');
+$routes->get('listar-consultas', 'contacto_controller::listar');
+$routes->get('responder-consulta/(:num)', 'contacto_controller::responder/$1');
+$routes->post('guardar-respuesta/(:num)', 'contacto_controller::guardar_respuesta/$1');

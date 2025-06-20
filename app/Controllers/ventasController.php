@@ -2,17 +2,20 @@
 
 namespace App\Controllers;
 
+date_default_timezone_set('America/Argentina/Buenos_Aires');
+
 use CodeIgniter\Controller;
 use App\Models\Usuarios_model;
 use App\Models\producto_Model;
 use App\Models\Ventas_cabecera_model;
 use App\Models\Ventas_detalle_model;
+use App\Controllers\carrito_controller;  
+
 
 class Ventascontroller extends Controller{
 
     public function registrar_venta(){
         $session = session();
-        require(APPPATH . 'Controllers/carrito_controller.php');
         $cartController = new carrito_controller();
         $carrito_contents = $cartController->devolver_carrito();
 
@@ -47,7 +50,7 @@ class Ventascontroller extends Controller{
         }
 
         $nueva_venta = [
-            'fecha' => date('Y-m-d'),
+            'fecha' => date('Y-m-d H:i:s'),
             'usuario_id' => $session->get('id_usuario'),
             'total_venta' => $total
         ];
@@ -85,14 +88,39 @@ class Ventascontroller extends Controller{
     }
 
     public function ver_facturas_usuario(){
+        $session = session();
+        $id_usuario = $session->get('id_usuario');
+        
         $ventas = new Ventas_cabecera_model;
 
         $data['ventas'] = $ventas->getVentas($id_usuario);
         $data['titulo'] = "Todas mis compras";
 
-        echo view('front/head_view_crud',$data);
-        echo view('front/platilla/nav_view');
-        echo view('back/compras/ver_facturas_usuario', $data);
+        echo view('front/head_view',$data);
+        echo view('front/plantilla/nav_view');
+        echo view('back/compras/ver_factura_usuario', $data);
         echo view('front/footer_view');
     }
+    
+    public function ventas(){
+        $venta_id = $this->request->getGet('id');
+
+        $detalle_ventas = new Ventas_detalle_model();
+        $data['venta']= $detalle_ventas->getDetalles($venta_id);
+
+        $ventasCabecera = new Ventas_cabecera_model();
+        $data['usuarios'] =$ventasCabecera->getBuilderVentas_cabecera();
+
+        $dato['titulo']= "ventas";
+        echo view('front/head_view', $dato);
+        echo view('front/plantilla/nav_view');
+        echo view('back/ventas/ventas',$data);
+        echo view('front/footer_view');
+    }
+
+    public function misFacturas()
+{
+    $id = session('id_usuario'); 
+    return redirect()->to('ver_factura_usuario/' . $id);
+}
 }

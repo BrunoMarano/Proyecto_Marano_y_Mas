@@ -2,6 +2,10 @@
 $session = session();
 $nombre = $session->get('nombre');
 $perfil = $session->get('perfil_id');
+
+$cart = \Config\Services::cart();
+$total_items = $cart->totalItems();
+
 ?>
 
 <link rel="stylesheet" href="<?= base_url('assets/css/styles.css') ?>">
@@ -26,7 +30,7 @@ $perfil = $session->get('perfil_id');
         <li><a class="nav-opciones" href="<?= base_url('catalogo') ?>">Catalogo</a></li>
         <li><a class="nav-opciones" href="<?= base_url('carrito') ?>">Carrito</a></li>
         <li><div class="nav-barrita"></div></li>
-        <li><a class="nav-opciones-mp" href="<?= base_url('') ?>">Mis Compras</a></li>
+        <li><a class="nav-opciones-mp" href="<?= base_url('ver_factura_usuario') ?>">Mis Compras</a></li>
       <?php endif; ?>
     <?php else: ?>
       <li><a class="nav-opciones" href="<?= base_url('/') ?>">Inicio</a></li>
@@ -50,12 +54,15 @@ $perfil = $session->get('perfil_id');
       <li class="nav-login"><a class="a-login-nav" href="<?= base_url('login') ?>">Iniciar sesión</a></li>
     <?php endif; ?>
 
-    <li class="carrito">
-      <a href="#">
+    <li class="carrito position-relative">
+      <a class="a-login-nav" href="<?= base_url('carrito') ?>"> Carrito
         <img class="imagen_ig" src="<?= base_url('assets/img/principal/redes/carrito-de-compras.png') ?>" alt="carrito">
+          <?php if ($total_items > 0): ?>
+          <span class="badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle"><?= $total_items ?></span>
+          <?php endif; ?>
       </a>
     </li>
-    <li class="nav-login"><a class="a-login-nav" href="<?= base_url('carrito') ?>">Carrito</a></li>
+
     
     <li>
       <form class="d-flex" role="search">
@@ -81,4 +88,4 @@ $perfil = $session->get('perfil_id');
       dropdownMenu.classList.remove('open');
     }
   });
-</script>
+</script
