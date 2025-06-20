@@ -62,5 +62,5 @@ $routes->get('ver_factura_usuario', 'ventasController::misFacturas', ['filter' =
 $routes->post('enviar-contacto', 'contacto_controller::enviar');
 $routes->post('guardar-consulta', 'contacto_controller::guardar');
 $routes->get('listar-consultas', 'contacto_controller::listar');
-$routes->get('responder-consulta/(:num)', 'contacto_controller::responder/$1');
-$routes->post('guardar-respuesta/(:num)', 'contacto_controller::guardar_respuesta/$1');
+$routes->post('responder_consulta', 'contacto_controller::responder_consulta');
+$routes->post('eliminar_consulta', 'contacto_controller::eliminar_consulta');
