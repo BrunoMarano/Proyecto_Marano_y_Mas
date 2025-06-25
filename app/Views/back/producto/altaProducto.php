@@ -1,4 +1,4 @@
-<div class="container mt-1 mb_1 d_flex justify-content_center">
+<div class="container mt-1 mb-1 d-flex justify-content-center">
      <div class="card" style="width:75%;">
         <div class="card-header text-center">
             <h2>Alta de Productos</h2>
@@ -12,14 +12,13 @@
             <div class="alert alert-success"><?= session()->getFlashdata('success'); ?></div>
         <?php endif; ?>
 
-        <?php !$validation = \Config\Services::validation(); ?>
-
+        <?php $validation = \Config\Services::validation(); ?>
 
         <!-- Inicio de formulario -->
         <form action="<?= base_url('/enviar-prod'); ?>" method="post" enctype="multipart/form-data">
-            <div class="card-body" media="(max-width:568px)">
+            <div class="card-body">
                 <div class="mb-2">
-                    <label for="nombre_prod" class="form-label">Productos</label>
+                    <label for="nombre" class="form-label">Productos</label>
                     <input class="form-control" type="text" name="nombre" id="nombre" value="<?= set_value('nombre');?>" placeholder="Nombre del producto" autofocus>
                     <!-- Error -->
                      <?php if($validation->getError('nombre')): ?>
@@ -31,7 +30,7 @@
                 
                 <!-- Categoría -->
                 <div class="mb-2">
-                    <label for="categoria_id" class="form-label">Categoria</label>
+                    <label for="categoria_id" class="form-label">Categoría</label>
                     <select class="form-control" name="categoria_id" id="categoria_id">
                         <option value="">Seleccionar categoría</option>
                         <?php foreach($categorias as $categoria): ?>
@@ -49,11 +48,10 @@
                     <?php endif; ?>
                 </div>
 
-
                 <!-- Costo del producto -->
                 <div class="mb-2">
                     <label for="costo" class="form-label">Costo</label>
-                    <input class="form-control" type="text" name="costo" id="costo" value="<?= set_value('costo');?>" placeholder="Costo del producto" autofocus>
+                    <input class="form-control" type="text" name="costo" id="costo" value="<?= set_value('costo');?>" placeholder="Costo del producto">
                     <!-- Error -->
                      <?php if($validation->getError('costo')): ?>
                         <div class="alert alert-danger mt-2">
@@ -65,7 +63,7 @@
                 <!-- Precio de venta -->
                 <div class="mb-2">
                     <label for="precio" class="form-label">Precio de venta</label>
-                    <input class="form-control" type="text" name="precio" id="precio" value="<?= set_value('precio');?>" placeholder="Nombre del producto" autofocus>
+                    <input class="form-control" type="text" name="precio" id="precio" value="<?= set_value('precio');?>" placeholder="Precio de venta">
                     <!-- Error -->
                      <?php if($validation->getError('precio')): ?>
                         <div class="alert alert-danger mt-2">
@@ -77,7 +75,7 @@
                 <!-- Stock -->
                 <div class="mb-2">
                     <label for="stock" class="form-label">Stock</label>
-                    <input class="form-control" type="text" name="stock" id="stock" value="<?= set_value('stock');?>" placeholder="Stock del producto" autofocus>
+                    <input class="form-control" type="text" name="stock" id="stock" value="<?= set_value('stock');?>" placeholder="Stock del producto">
                     <!-- Error -->
                      <?php if($validation->getError('stock')): ?>
                         <div class="alert alert-danger mt-2">
@@ -89,7 +87,7 @@
                 <!-- Stock mínimo-->
                 <div class="mb-2">
                     <label for="stock_min" class="form-label">Stock Mínimo</label>
-                    <input class="form-control" type="text" name="stock_min" id="stock_min" value="<?= set_value('stock_min');?>" placeholder="Stock mínimo del producto" autofocus>
+                    <input class="form-control" type="text" name="stock_min" id="stock_min" value="<?= set_value('stock_min');?>" placeholder="Stock mínimo del producto">
                     <!-- Error -->
                      <?php if($validation->getError('stock_min')): ?>
                         <div class="alert alert-danger mt-2">
@@ -101,7 +99,7 @@
                 <!-- Imagen-->
                 <div class="mb-2">
                     <label for="imagen" class="form-label">Imagen</label>
-                    <input type="file" name="imagen" id="imagen" accept="imagen/*">
+                    <input type="file" name="imagen" id="imagen" accept="image/*">
                     <!-- Error -->
                      <?php if($validation->getError('imagen')): ?>
                         <div class="alert alert-danger mt-2">
@@ -120,5 +118,3 @@
         </form>
     </div>
 </div>
-
-            

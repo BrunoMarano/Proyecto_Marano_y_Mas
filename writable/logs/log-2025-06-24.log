@@ -1,0 +1,34 @@
+INFO - 2025-06-24 23:27:21 --> Cart Class Initialized
+INFO - 2025-06-24 23:27:26 --> Cart Class Initialized
+INFO - 2025-06-24 23:27:28 --> Cart Class Initialized
+INFO - 2025-06-24 23:29:34 --> Cart Class Initialized
+INFO - 2025-06-24 23:29:35 --> Cart Class Initialized
+INFO - 2025-06-24 23:30:46 --> Cart Class Initialized
+INFO - 2025-06-24 23:30:51 --> Cart Class Initialized
+INFO - 2025-06-24 23:31:00 --> Cart Class Initialized
+INFO - 2025-06-24 23:31:39 --> Cart Class Initialized
+CRITICAL - 2025-06-24 23:31:39 --> ErrorException: Undefined array key "stock_minimo"
+[Method: GET, Route: carrito-comprar]
+in APPPATH\Controllers\ventasController.php on line 35.
+ 1 APPPATH\Controllers\ventasController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "stock_minimo"', 'C:\\xampp\\htdocs\\Proyecto_Marano_y_Mas\\app\\Controllers\\ventasController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasController->registrar_venta()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-24 23:32:29 --> Cart Class Initialized
+INFO - 2025-06-24 23:32:58 --> Cart Class Initialized
+INFO - 2025-06-24 23:33:04 --> Cart Class Initialized
+INFO - 2025-06-24 23:34:22 --> Cart Class Initialized
+INFO - 2025-06-24 23:34:23 --> Cart Class Initialized
+INFO - 2025-06-24 23:35:18 --> Cart Class Initialized
+INFO - 2025-06-24 23:35:18 --> Cart Class Initialized
+INFO - 2025-06-24 23:35:25 --> Cart Class Initialized
+INFO - 2025-06-24 23:38:35 --> Cart Class Initialized
+INFO - 2025-06-24 23:47:47 --> Cart Class Initialized
+INFO - 2025-06-24 23:49:50 --> Cart Class Initialized
+INFO - 2025-06-24 23:49:50 --> Cart Class Initialized
+INFO - 2025-06-24 23:50:02 --> Cart Class Initialized
+INFO - 2025-06-24 23:52:35 --> Cart Class Initialized
+INFO - 2025-06-24 23:52:37 --> Cart Class Initialized

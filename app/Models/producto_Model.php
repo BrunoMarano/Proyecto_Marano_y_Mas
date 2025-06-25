@@ -16,7 +16,11 @@ class producto_Model extends Model {
     }
 
     public function updateStock($id, $nuevoStock) {
-        return $this->update($id, ['stock' => $nuevoStock]);
+    $result = $this->update($id, ['stock' => $nuevoStock]);
+            if (!$result) {
+            log_message('error', "Error actualizando stock para producto ID: $id");
+            }
+        return $result;
     }
 
 }
