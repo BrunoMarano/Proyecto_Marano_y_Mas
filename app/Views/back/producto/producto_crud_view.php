@@ -1,16 +1,17 @@
 <div class="container m-4">
 
+
     <?php if(session()->getFlashdata('success')): ?>
         <div class="alert alert-success">
             <?= session()->getFlashdata('success') ?>
         </div>
     <?php endif; ?>
 
-    <div class="d-flex justify-content-end mb-2">
+    <div class="d-flex justify-content-end mb-2" >
         <a href="<?= base_url('produ-form') ?>" class="btn btn-success">Agregar producto</a>
     </div>
 
-    <table class="table table-bordered table-hover table-striped">
+    <table class="table table-bordered table-hover table-striped" style="margin-bottom: 30%; text-align: center;">
         <thead class="table-secondary">
             <tr>
                 <th>ID</th>

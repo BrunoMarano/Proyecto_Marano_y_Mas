@@ -8,9 +8,9 @@
         </div>
     </div>
     <?php } else{ ?>
-        <div class="container" style="margin-bottom: 15%">
+        <div class="container" style="margin-bottom: 21%">
             <div class="table-responsive-sm text-center">
-                <h1 class="text-center">Mis compras</h1>
+                <h1 class="text-center" style="margin-bottom: 3%;margin-top: 1%">Mis compras</h1>
                 <table class="table table-warning table-striped rounded">
                     <thead class="thead-dark">
                         <th>Nombre cliente</th>

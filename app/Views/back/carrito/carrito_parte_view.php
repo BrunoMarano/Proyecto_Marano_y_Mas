@@ -26,7 +26,7 @@
 <?php if (!empty($cart)): ?>
 <form action="<?= base_url('carrito_actualiza') ?>" method="post">
     <div class="container my-3">
-        <table class="table table-hover table-dark table-responsive-md">
+        <table class="table table-hover table-dark table-responsive-md"  style="margin-bottom: 47%;">
             <thead class="table-dark">
                 <tr>
                     <th>IMAGEN</th>
